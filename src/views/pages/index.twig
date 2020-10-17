@@ -1,0 +1,299 @@
+{% set page_title = 'Sun Shine' %}
+{% extends "../elements/_base.twig" %}
+
+{% block content %}
+<div class="social d-none">
+    <figure class="btn_baogia">
+        <img src="./assets/images/btn_baogia.png" alt="SUNSHINE CRYSTAL RIVER">
+    </figure>
+    <a href="#" class="social__item fb">
+        <img src="./assets/images/social_fb.png" alt="SUNSHINE CRYSTAL RIVER">
+    </a>
+    <a href="#" class="social__item phone">
+        <img src="./assets/images/social_phone.png" alt="SUNSHINE CRYSTAL RIVER">
+    </a>
+</div>
+<div class="menu">
+    <div class="menu__dots">
+        <span class="menu__dots_text">Trang chủ</span>
+        <div class="menu__dots_circle">
+            <a name="Trang chủ" link="home" class="active" href="#home"></a>
+            <a name="Vị trí & Tiện ích" link="position" href="#position"></a>
+            <a name="Mặt bằng tầng điển hình" link="mtbdh" href="#mtbdh"></a>
+            <a name="Tiện ích" link="ults" href="#ults"></a>
+            <a name="Tin tức" link="news" href="#news"></a>
+            <a name="CSBH" link="csbh" href="#csbh"></a>
+        </div>
+    </div>
+    <div class="menu__text">
+        <a href="#" class="menu__text_logo">
+            <img src="./assets/images/logo.png" alt="SUNSHINE CRYSTAL RIVER">
+        </a>
+        {# active #}
+        <div class="menu__text_toggle">
+            <span class="text">
+                menu
+            </span>
+            <div class="lines">
+                <span class="line line_1"></span>
+                <span class="line line_2"></span>
+                <span class="line line_3"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# block1 #}
+<section class="block1 home" id="home">
+    <div class="block1__container">
+        <figure class="block1__heading wow fadeInDown">
+            <img src="./assets/images/block1_title.png" alt="block 1 heading">
+        </figure>
+        <form class="form" action="">
+            <div class="block1__title wow fadeIn">
+                ĐĂNG KÝ TẠI ĐÂY
+                <br>
+                ĐỂ NHẬN TƯ VẤN VÀ BÁO GIÁ
+            </div>
+            <div class="block1__form form">
+                <div class="block1__form-group wow fadeInUp" data-wow-delay="0.2s">
+                    <input class="block1__form-control block1Name" name="name" type="text" placeholder="Họ và tên">
+                </div>
+                <div class="block1__form-group wow fadeInUp" data-wow-delay="0.4s">
+                    <input class="block1__form-control block1Phone" name="phone" type="text"
+                        placeholder="Số điện thoại">
+                </div>
+                <div class="block1__form-group wow fadeInUp" data-wow-delay="0.6s">
+                    <input class="block1__form-control block1Email" name="email" type="text" placeholder="Email">
+                </div>
+                <div class="block1__form-group wow fadeInUp" data-wow-delay="0.8s">
+                    <input class="block1__form-control block1Note" name="note" type="text"
+                        placeholder="Ghi chú yêu cầu">
+                </div>
+                <div class="block1__form-button text-center wow fadeInUp" data-wow-delay="1s">
+                    <button class="btn-submit submit-form" type="submit" disabled="disabled">
+                        Đăng ký
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+{# block5 #}
+<section class="block5">
+    <div class="block5__container">
+        <div class="block5__wrap block5__left">
+            <a href="#" class="block5__logo wow fadeInUp">
+                <img src="./assets/images/logo_footer.png" alt="SUNSHINE CRYSTAL RIVER">
+            </a>
+            <div class="block5__contact wow fadeInUp">
+                <div>
+                    <span>Địa Chỉ Dự Án:</span>
+                    Quận 4, TP Hồ Chí Minh
+                </div>
+                <div class="d-flex">
+                    <div>
+                        Email:
+                        <a href="mailto:replydiamondriver@sunshinegroup.vn">horizon@sunshinegroup.vn</a>
+                    </div>
+                    <div>
+                        <span class="pl-2 pr-2 d-none d-md-inline-block">-</span>
+                        Hotline:
+                        <a href="tel:0931 222 279">0931 2222 79</a>
+                    </div>
+                </div>
+            </div>
+            <div class="block5__address">
+                <div class="block5__address-item wow fadeInUp">
+                    <div>
+                        <span>Tại Hà Nội:</span>
+                    </div>
+                    <div>
+                        Tòa nhà Sunshine Center
+                        <br>
+                        Số 16, Đường Phạm Hùng,
+                        <br>
+                        Quận Nam Từ Liêm, Hà Nội
+                    </div>
+                </div>
+                <div class="block5__address-item wow fadeInUp">
+                    <div>
+                        <span>Tại Hồ Chí Minh:</span>
+                    </div>
+                    <div>
+                        Tầng 18, Tòa nhà Deutches Haus,
+                        <br>
+                        33 Lê Duẩn, Phường Bến Nghé,
+                        <br>
+                        Quận 1, Thành phố Hồ Chí Minh
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block5__wrap block5__right">
+            <div class="block5__right-title wow fadeInUp">
+                ĐĂNG KÝ TẠI ĐÂY ĐỂ NHẬN TƯ VẤN VÀ BÁO GIÁ
+            </div>
+            <form method="POST">
+                <div class="block5__form form">
+                    <div class="block5__form-group wow fadeInUp" data-wow-delay="0.2s">
+                        <input class="block5__form-control block5Name" name="name" type="text" placeholder="Họ và tên">
+                    </div>
+                    <div class="block5__form-group wow fadeInUp" data-wow-delay="0.4s">
+                        <input class="block5__form-control block5Email" name="email" type="text" placeholder="Email">
+                    </div>
+                    <div class="block5__form-group wow fadeInUp" data-wow-delay="0.6s">
+                        <input class="block5__form-control block5Phone" name="phone" type="text"
+                            placeholder="Số điện thoại">
+                    </div>
+                    <div class="block5__form-group wow fadeInUp" data-wow-delay="0.8s">
+                        <input class="block5__form-control block5Note" name="note" type="text"
+                            placeholder="Ghi chú nhu cầu">
+                    </div>
+                    <div class="block5__button text-center wow fadeInUp" data-wow-delay="1s">
+                        <button class="btn-submit  submit-form" type="submit" disabled="disabled">
+                            Đăng ký
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+{# nhớ thêm active để show  #}
+<div class="message">
+    <div class="message__content text-center">
+        <div class="message__title">Bạn đã đăng ký tư vấn thành công.</div>
+        <button class="btn-submit" type="button">Đóng</button>
+    </div>
+</div>
+{#  nhớ thêm active để show  #}
+<div class="loading">
+    <img src="./assets/images/loading.gif">
+</div>
+{# modal đăng kí #}
+<div class="modal fade in popup" id="Popup" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <span class="close" data-dismiss="modal" aria-label="Close"> x</span>
+                <div class="popup__content">
+                    <div class="popup__wrap left">
+                        <img src="./assets/images/popup.jpg" alt="ĐĂNG KÝ TẠI ĐÂY ĐỂ NHẬN TƯ VẤN VÀ BÁO GIÁ">
+                    </div>
+                    <div class="popup__wrap right">
+                        <div class="popup__title">
+                            ĐĂNG KÝ TẠI ĐÂY<br> ĐỂ NHẬN TƯ VẤN VÀ BÁO GIÁ
+                        </div>
+                        <form method="POST">
+                            <div class="popup__form form">
+                                <div class="popup__form-group">
+                                    <input class="popup__form-control PopupName" name="name" type="text"
+                                        placeholder="Họ và tên">
+                                </div>
+                                <div class="popup__form-group">
+                                    <input class="popup__form-control PopupEmail" name="email" type="text"
+                                        placeholder="Email">
+                                </div>
+                                <div class="popup__form-group">
+                                    <input class="popup__form-control PopupPhone" name="phone" type="text"
+                                        placeholder="Số điện thoại">
+                                </div>
+                                <div class="popup__form-group">
+                                    <input class="popup__form-control PopupNote" name="note" type="text"
+                                        placeholder="Ghi chú nhu cầu">
+                                </div>
+                                <div class="popup__button text-center mt-4">
+                                    <button class="btn-submit submit-form" type="submit" disabled="disabled">
+                                        Đăng ký
+                                    </button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# modal news #}
+<div class="modal fade in show news" id="News" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <span class="close" data-dismiss="modal" aria-label="Close"> x</span>
+            <div class="modal-body">
+                <div class="news__title">
+                    'Giá là yếu tố chính <br>
+                    quyết định việc mua căn hộ'
+                </div>
+                <div class="news__content">
+                    <div class="news__wrap left">
+                        <img src="./assets/images/news_popup.jpg" alt="Giá là yếu tố chính quyết định việc mua căn hộ">
+                    </div>
+                    <div class="news__wrap right">
+                        <p>Theo các chuyên gia Savills, giá là yếu tố chính, bên cạnh diện tích, quyết định việc mua căn
+                            hộ của khách hàng.</p>
+
+                        <p>Tại họp báo công bố báo cáo quý III mới đây, bà Đỗ Thu Hằng, Giám đốc bộ phận nghiên cứu và
+                            tư vấn Savills Hà Nội cho biết, hiện rất ít căn hộ có giá 20 triệu đồng một m2. "Trong
+                            26.800 căn hộ sơ cấp, chỉ có khoảng 700 căn ở mức giá này", bà nói.</p>
+
+                        <p>Giá căn hộ trên thị trường sơ cấp trung bình đã tăng 3% theo quý, 10% theo năm, lên đến 1.500
+                            USD (hơn 34,5 triệu đồng) mỗi m2 trong quý III. Giá sơ cấp là giá chủ đầu tư bán trực tiếp
+                            ra thị trường, cứ trung bình mỗi năm tăng 5%, theo Savills. Hiện giá tại các dự án ở khu vực
+                            vành đai - vốn được xem là rẻ, đang thu hẹp khoảng cách với nội thành. Nguyên nhân là các
+                            chủ đầu tư tập trung nâng cấp hạ tầng, tiện ích, đẩy mức giá lên.</p>
+
+                        <p>Trong khi đó, bà Hằng nhận định, nhu cầu căn hộ bình dân tăng nhanh. Với 5.200 căn hộ bán
+                            được, 99% đến từ phân khúc hạng B và C. Thị trường đang rất nhạy cảm về giá cao. Một số dự
+                            án ở Mỹ Đình có giá 50-60 triệu đồng mỗi m2, cản trở phía đại lý vào, giảm sự thu hút của
+                            người mua. "Giá và diện tích là các yếu tố chính quyết định việc mua nhà chứ không phải các
+                            tiện ích, hạ tầng xung quanh", bà Hằng nói.</p>
+
+                        <p>Ngược lại, giá tại thị trường thứ cấp có sự giảm nhẹ vì dịch bệnh, khoảng 1% theo quý, xuống
+                            còn 1.157 USD một m2. Các nhà đầu tư đang chịu áp lực do giá không tăng như kỳ vọng nên muốn
+                            rút ra khỏi thị trường.</p>
+                        <p>
+                            Tuy nhiên, báo cáo của Savills cũng cho thấy, cầu giảm do thiếu nguồn cung mới và hàng tồn
+                            kho giá cao. Trong quý vừa qua chỉ có 3.100 căn hộ từ 4 dự án mới và giai đoạn tiếp theo của
+                            9 dự án tung bán, giảm 50% theo quý và 60% theo năm.</p>
+                        <p>
+                            "Nguồn cung mới đang thấp nhất trong 5 năm qua", bà Hằng bình luận. Nguồn cung sơ cấp giảm
+                            khi chủ đầu tư hoãn tung bán mới vì sợ các yếu tố bất ổn. Thị trường căn hộ còn bị tác động
+                            từ làn sóng Covid-19 lần hai và tháng Ngâu.Theo các chuyên gia Savills, giá là yếu tố chính,
+                            bên cạnh diện tích, quyết định việc mua căn hộ của khách hàng.</p>
+
+                        <p>Tại họp báo công bố báo cáo quý III mới đây, bà Đỗ Thu Hằng, Giám đốc bộ phận nghiên cứu và
+                            tư vấn Savills Hà Nội cho biết, hiện rất ít căn hộ có giá 20 triệu đồng một m2. "Trong
+                            26.800 căn hộ sơ cấp, chỉ có khoảng 700 căn ở mức giá này", bà nói.</p>
+
+                        <p> Giá căn hộ trên thị trường sơ cấp trung bình đã tăng 3% theo quý, 10% theo năm, lên đến
+                            1.500 USD (hơn 34,5 triệu đồng) mỗi m2 trong quý III. Giá sơ cấp là giá chủ đầu tư bán trực
+                            tiếp ra thị trường, cứ trung bình mỗi năm tăng 5%, theo Savills. Hiện giá tại các dự án ở
+                            khu vực vành đai - vốn được xem là rẻ, đang thu hẹp khoảng cách với nội thành. Nguyên nhân
+                            là các chủ đầu tư tập trung nâng cấp hạ tầng, tiện ích, đẩy mức giá lên.</p>
+
+                        <p>Trong khi đó, bà Hằng nhận định, nhu cầu căn hộ bình dân tăng nhanh. Với 5.200 căn hộ bán
+                            được, 99% đến từ phân khúc hạng B và C. Thị trường đang rất nhạy cảm về giá cao. Một số dự
+                            án ở Mỹ Đình có giá 50-60 triệu đồng mỗi m2, cản trở phía đại lý vào, giảm sự thu hút của
+                            người mua. "Giá và diện tích là các yếu tố chính quyết định việc mua nhà chứ không phải các
+                            tiện ích, hạ tầng xung quanh", bà Hằng nói.</p>
+
+                        <p>Ngược lại, giá tại thị trường thứ cấp có sự giảm nhẹ vì dịch bệnh, khoảng 1% theo quý, xuống
+                            còn 1.157 USD một m2. Các nhà đầu tư đang chịu áp lực do giá không tăng như kỳ vọng nên muốn
+                            rút ra khỏi thị trường.</p>
+
+                        <p>Tuy nhiên, báo cáo của Savills cũng cho thấy, cầu giảm do thiếu nguồn cung mới và hàng tồn
+                            kho giá cao. Trong quý vừa qua chỉ có 3.100 căn hộ từ 4 dự án mới và giai đoạn tiếp theo của
+                            9 dự án tung bán, giảm 50% theo quý và 60% theo năm.</p>
+
+                        <p>"Nguồn cung mới đang thấp nhất trong 5 năm qua", bà Hằng bình luận. Nguồn cung sơ cấp giảm
+                            khi chủ đầu tư hoãn tung bán mới vì sợ các yếu tố bất ổn. Thị trường căn hộ còn bị tác động
+                            từ làn sóng Covid-19 lần hai và tháng Ngâu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
