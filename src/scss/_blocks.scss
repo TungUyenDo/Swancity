@@ -240,3 +240,535 @@
         }
     }
 }
+
+.block5 {
+    position: relative;
+    height: 56.719vw;
+    width: 100%;
+    background: url(../assets/images/block5_bg.jpg);
+    background-size: 100% 100%;
+    padding-top: 7.292vw;
+
+    &__container {
+        width: calc(100% - 150px);
+        margin: 0 auto;
+    }
+
+    &__slider {}
+
+    &__item {
+        position: relative;
+
+        .title {
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: $SVN-Gotham;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            @include transform(translateX(-50%));
+            bottom: 3.385vw;
+            font-size: 1.042vw;
+            line-height: normal;
+        }
+
+        .sub-title {
+            text-transform: none;
+            font-family: $SVN-Gotham-Book;
+            font-size: 0.938vw;
+        }
+
+        .image {}
+    }
+
+    .slick-dots {
+        bottom: 0;
+
+        li {
+            margin: 0 0.573vw;
+
+            button {
+                background: #373737;
+                border-radius: 50%;
+                width: 1.042vw;
+                height: 1.042vw;
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            &.slick-active {
+                button {
+                    background: #b7b7b7;
+                }
+            }
+        }
+    }
+}
+
+.block6 {
+    position: relative;
+    height: 55.833vw;
+    width: 100%;
+    background: url(../assets/images/block6_bg.jpg);
+    background-size: 100% 100%;
+    padding-top: 7.813vw;
+
+    &__container {
+        @include flexbox;
+    }
+
+    &__heading {
+        font-family: $UTMGod_sWordR;
+        text-transform: uppercase;
+        font-size: 2.604vw;
+        line-height: 3.021vw;
+        margin-bottom: 1.406vw;
+    }
+
+    &__des {
+        width: 26.042vw;
+        font-size: 0.938vw;
+        line-height: normal;
+        font-family: $SVN-Gotham-Book;
+    }
+
+    &__left {
+        @include flex(1);
+        padding-right: 1.979vw;
+    }
+
+    &__right {
+        color: #fff;
+        width: 32.292vw;
+        padding-top: 11.979vw;
+    }
+}
+
+.block7 {
+    position: relative;
+    width: 100%;
+    background: url(../assets/images/block7_bg.jpg);
+    background-size: 100% 100%;
+    padding-top: 5.885vw;
+    padding-bottom: 4.427vw;
+
+    &__container {
+        width: 61.823vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__title {
+        text-align: center;
+        color: #fff;
+        margin-bottom: 1.354vw;
+        font-family: $SVN-Gotham;
+        font-size: 1.146vw;
+        line-height: normal;
+    }
+
+    &__form {
+        @include flexbox;
+        @include flex-wrap(wrap);
+        @include justify-content(space-between);
+    }
+
+    .form__group {
+        width: calc(50% - 7px);
+    }
+}
+
+.block8 {
+    background-color: #000;
+    padding: 6.771vw 4.010vw 8.854vw 9.740vw;
+
+    &__container {
+        @include flexbox;
+    }
+
+    &__left {
+        margin-right: 3.438vw;
+    }
+
+    &__right {}
+
+    &__slider {
+        width: 28.646vw;
+        color: #fff
+    }
+
+    .nav {
+        @include flex-direction(column);
+        @include align-items(flex-end);
+        margin-bottom: 2.240vw;
+        border-bottom: none;
+        width: 18.750vw;
+        margin-left: auto;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-link {
+        border: none;
+        border-radius: 0;
+        color: #fff;
+        opacity: 0.3;
+        text-transform: uppercase;
+        font-family: $UTMGod_sWordR;
+        display: block;
+        position: relative;
+        text-align: right;
+        white-space: nowrap;
+        padding-left: 3.583vw;
+        padding-right: 0;
+        margin: 0.052vw 0;
+        font-size: 2.083vw;
+
+        &.active,
+        &:hover {
+            color: #fff;
+            opacity: 1;
+            background-color: #707070;
+
+            &::before {
+                position: absolute;
+                content: '';
+                height: 100%;
+                width: 8.594vw;
+                background-color: #707070;
+                left: 100%;
+                top: 0;
+            }
+        }
+    }
+
+    .slick-dots {
+        position: static;
+        margin-top: 1.75vw;
+        text-align: right;
+
+        li {
+            margin: 0 0.573vw;
+
+            button {
+                width: 1.042vw;
+                height: 1.042vw;
+                background-color: #373737;
+                border-radius: 50%;
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            &.slick-active {
+                button {
+                    background-color: #b7b7b7;
+                }
+            }
+        }
+    }
+
+    /* the slides */
+    .slick-slide {
+        margin: 0 0.365vw;
+    }
+
+    /* the parent */
+    .slick-list {
+        margin: 0 -0.365vw;
+    }
+
+    /* bootstrap hack: fix content width inside hidden tabs */
+    .block8__sliders>.block8__slider {
+        display: block;
+        /* undo display:none          */
+        height: 0;
+        /* height:0 is also invisible */
+        overflow: hidden;
+        /* no-overflow                */
+    }
+
+    .block8__sliders>.show {
+        height: auto;
+        /* let the content decide it  */
+    }
+
+    /* bootstrap hack end */
+}
+
+
+.block9 {
+    padding-top: 6vw;
+    padding-bottom: 6.771vw;
+    position: relative;
+    width: 100%;
+    background-color: #000;
+
+    @media (max-width: 767px) {
+        height: auto;
+        padding-bottom: 7vw;
+        padding-top: 7vw;
+        background: linear-gradient(180deg, #dbdcde 0%, #ffffff 100%);
+    }
+
+    &__container {
+        margin: 0 auto;
+        // width: calc(100% - 300px);
+        width: calc(100% - 15.625vw);
+    }
+
+
+    .big_heading {
+        @include flexbox;
+        @include align-items(end);
+        width: 30.469vw;
+        margin: 0 auto;
+        text-align: center;
+
+        * {
+            display: inline-block;
+            color: #fff;
+            font-family: $UTMGod_sWordR;
+        }
+
+        span {
+            @include flexbox;
+            @include flex-direction(column);
+            font-size: 50px;
+            text-transform: uppercase;
+            text-align: left;
+
+            &:nth-child(2) {
+                padding-left: 110px;
+            }
+        }
+
+        i {
+            font-size: 1.667vw;
+            padding-top: 0.104vw;
+            text-transform: uppercase;
+            font-style: normal;
+            margin-top: auto;
+            margin-left: 25px;
+            margin-bottom: 2px;
+
+            @media (max-width: 767px) {
+                font-size: 3.667vw;
+            }
+        }
+
+        &__top {
+            line-height: normal;
+        }
+    }
+
+    &__content {
+        @include flexbox;
+        @include justify-content(flex-end);
+        @include flex-wrap(wrap);
+        // margin-left: 60px;
+        // margin-top: 30px;
+        margin-left: 3.125vw;
+        margin-top: 1.563vw;
+
+        @media (max-width: 767px) {
+            margin-left: 0;
+            margin-top: 7vw;
+        }
+
+        &--item {
+            width: calc((100% / 3) - 4.167vw);
+            margin: 0 2.083vw;
+            text-align: right;
+
+            @media (max-width: 767px) {
+                width: 85%;
+                margin: 0 auto;
+                text-align: left;
+                margin-bottom: 5vw;
+            }
+
+            .title {
+                line-height: normal;
+                @include flexbox;
+                @include align-items(flex-end);
+                @include justify-content(space-between);
+            }
+
+            .no {
+                color: #585858;
+                margin-bottom: 1.042vw;
+                font-size: 2.083vw;
+                font-family: $SVN-Gotham-Bold;
+
+                @media (max-width: 767px) {
+                    font-size: 5vw;
+                }
+            }
+
+            .percent {
+                color: #fff;
+                font-size: 8.333vw;
+                font-family: $vanitas;
+
+                @media (max-width: 767px) {
+                    font-size: 10vw;
+                }
+            }
+
+            .detail {
+                color: #fff;
+                font-family: $SVN-Gotham-Book;
+                line-height: normal;
+                font-size: 0.938vw;
+
+                @media (max-width: 767px) {
+                    font-size: 3.5vw;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+.block11 {
+    position: relative;
+    width: 100%;
+    height: 33.385vw;
+    background: url(../assets/images/blockend_bg.jpg);
+    background-size: 100% 100%;
+    color: #fff;
+
+    @media (max-width: 767px) {
+        padding-bottom: 10vw;
+    }
+
+    a {
+        color: inherit;
+    }
+
+    &__container {
+        @include flexbox;
+        margin: 0 auto;
+        // padding: 100px 0;
+        padding: 5.208vw 0;
+        margin-left: 19.010vw;
+
+        @media (max-width: 767px) {
+            @include flex-direction(column);
+        }
+    }
+
+    &__wrap {}
+
+    &__left {
+        @include flexbox;
+        font-size: 1.302vw;
+        line-height: normal;
+        margin-top: 2.563vw;
+
+        @media (max-width: 767px) {
+            font-size: 3.5vw;
+        }
+    }
+
+    &__right {
+        width: 23.698vw;
+        position: absolute;
+        right: 20.417vw;
+        margin-top: 3.5vw;
+
+        @media (max-width: 767px) {
+            width: 80vw;
+        }
+
+        &-title {
+            font-family: $SVN-Gotham;
+            text-align: center;
+            line-height: 1.3;
+            margin-bottom: 1.242vw;
+            font-size: 1.146vw;
+
+            @media (max-width: 767px) {
+                font-size: 6.615vw;
+                margin-top: 7vw;
+            }
+        }
+    }
+
+    &__logo {
+        @include flexbox;
+        @include flex-direction(column);
+        @include align-items(center);
+        margin-right: 2.865vw;
+
+
+
+        .logo_1 {
+            width: 2.865vw;
+            margin-bottom: 0.625vw;
+        }
+
+        .logo_2 {
+            width: 8.438vw;
+        }
+
+    }
+
+    &__contact {
+        margin-top: 1.102vw;
+
+        .name {
+            font-family: $UTMGod_sWordR;
+            margin-bottom: 1.198vw;
+            font-size: 2.083vw;
+        }
+
+        .address {
+            font-size: 0.942vw;
+            font-family: $SVN-Gotham;
+
+            p {
+                margin-bottom: 1.102vw;
+                line-height: normal;
+            }
+        }
+    }
+
+    &__form {}
+
+    &__form-group {
+        margin-bottom: 0.781vw;
+    }
+
+    &__form-control {
+        border: none;
+        background-color: transparent;
+        border-bottom: 0.052vw solid #091829;
+        height: 3.125vw;
+        border-radius: 0;
+        outline: none;
+        box-shadow: none;
+        width: 100%;
+
+        @media (max-width: 767px) {
+            padding-left: 2.5vw;
+            font-size: 3.5vw;
+            height: 9.125vw;
+        }
+    }
+
+    &__button {
+        margin-top: 1.2vw;
+
+        @media (max-width: 767px) {
+            margin-top: 3vw;
+        }
+    }
+}

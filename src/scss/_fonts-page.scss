@@ -7,6 +7,7 @@ $UVFVanitasRegular: "UVFVanitasRegular";
 
 $SVN-Gotham: "SVN-Gotham";
 $SVN-Gotham-Book: "SVN-Gotham-Book";
+$SVN-Gotham-Bold: "SVN-Gotham-Bold";
 
 $vanitas: "vanitas";
 
@@ -87,4 +88,13 @@ $vanitas: "vanitas";
         url("../assets/fonts/SVN-Gotham-Book/SVN-Gotham-Book.woff") format("woff"),
         url("../assets/fonts/SVN-Gotham-Book/SVN-Gotham-Book.ttf") format("truetype"),
         url("../assets/fonts/SVN-Gotham-Book/SVN-Gotham-Book.svg#SVN-Gotham-Book") format("svg");
+}
+
+@font-face {
+    font-family: "SVN-Gotham-Bold";
+    src: url("../assets/fonts/SVN-Gotham-Bold/SVN-Gotham-Bold.eot");
+    src: url("../assets/fonts/SVN-Gotham-Bold/SVN-Gotham-Bold.eot") format("embedded-opentype"),
+        url("../assets/fonts/SVN-Gotham-Bold/SVN-Gotham-Bold.woff") format("woff"),
+        url("../assets/fonts/SVN-Gotham-Bold/SVN-Gotham-Bold.ttf") format("truetype"),
+        url("../assets/fonts/SVN-Gotham-Bold/SVN-Gotham-Bold.svg#SVN-Gotham-Bold") format("svg");
 }

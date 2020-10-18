@@ -13,10 +13,50 @@ var MainScript = (function () {
     var _init = function () {
         self.PopupValidateForm();
         self.Block1ValidateForm();
+        self.Block7ValidateForm();
+        self.Block11ValidateForm();
+        self.Block5Slider();
+        self.Block8Slider();
+        self.Block8Tabs();
         self.Menu();
         self.OpenMenu();
     }
     var _resize = function () { }
+
+    this.Block8Tabs = function () {
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            let href = $(this).attr('href');
+            console.log(href);
+            $('.block8__slider').removeClass('show')
+            $('.block8__slider[data-slide="' + href + '"]').addClass('show')
+        })
+    }
+
+    this.Block5Slider = function () {
+        if ($(".block5__slider").length === 0) {
+            return false
+        }
+
+        $(".block5__slider").slick({
+            arrows: false,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 3000
+        });
+    }
+    this.Block8Slider = function () {
+        if ($(".block8__slider").length === 0) {
+            return false
+        }
+
+        $(".block8__slider").slick({
+            arrows: false,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            slidesToShow: 2
+        });
+    }
 
     this.PopupValidateForm = function () {
         var form = [{
@@ -55,6 +95,46 @@ var MainScript = (function () {
             validators: []
         }]
         var $submit = ".block1__form-button button";
+        validateForm($submit, form);
+    }
+
+    this.Block7ValidateForm = function () {
+        var form = [{
+            name: '.block7Name',
+            validators: ['required']
+        }, {
+            name: '.block7Phone',
+            validators: ['required', 'isNumber', 'minLength', 'maxLength'],
+            minLength: 10,
+            maxLength: 10,
+        }, {
+            name: '.block7Email',
+            validators: ['required']
+        }, {
+            name: '.block7Note',
+            validators: []
+        }]
+        var $submit = ".block7__form-button button";
+        validateForm($submit, form);
+    }
+
+    this.Block11ValidateForm = function () {
+        var form = [{
+            name: '.block11Name',
+            validators: ['required']
+        }, {
+            name: '.block11Phone',
+            validators: ['required', 'isNumber', 'minLength', 'maxLength'],
+            minLength: 10,
+            maxLength: 10,
+        }, {
+            name: '.block11Email',
+            validators: ['required']
+        }, {
+            name: '.block11Note',
+            validators: []
+        }]
+        var $submit = ".block7__form-button button";
         validateForm($submit, form);
     }
 
