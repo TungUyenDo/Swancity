@@ -1,0 +1,242 @@
+.block1 {
+    position: relative;
+    height: 57.344vw;
+    width: 100%;
+    background: url(../assets/images/block1_bg.jpg);
+    background-size: 100% 100%;
+
+    &__container {}
+
+    &__heading {
+        position: absolute;
+        width: 33.438vw;
+        top: 9.375vw;
+        left: 40.469vw;
+    }
+
+    &__logo {
+        @include flexbox;
+        @include flex-direction(column);
+        @include align-items(center);
+        margin-bottom: 2.656vw;
+
+        .logo_1 {
+            width: 1.458vw;
+            margin-bottom: 0.625vw;
+        }
+
+        .logo_2 {
+            width: 5.469vw;
+        }
+    }
+
+    &__wrap-form {
+        position: absolute;
+        left: 9.063vw;
+        top: 3.646vw;
+        width: 23.698vw;
+    }
+
+    &__form {
+        margin-bottom: 2.083vw;
+    }
+
+    &__form-button {
+        margin-top: 1.042vw;
+    }
+
+    &__form-title {
+        font-family: $SVN-Gotham;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 1.150vw;
+        font-size: 22px;
+        line-height: normal;
+
+    }
+
+    &__des {
+        font-family: $SVN-Gotham-Book;
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 2.604vw;
+        line-height: normal;
+    }
+
+    &__created-by {
+        width: 7.292vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+.block2 {
+    position: relative;
+    height: 44.792vw;
+    width: 100%;
+    background: url(../assets/images/block2_bg.jpg);
+    background-size: 100% 100%;
+
+    &__container {
+        position: absolute;
+        text-align: center;
+        top: 22.563vw;
+        left: 50%;
+        @include transform(translateX(-50%))
+    }
+
+    &__heading {
+        color: #fff;
+
+        span {
+            display: block;
+            text-transform: uppercase;
+        }
+
+        .txt-1 {
+            font-size: 60px;
+            font-family: $UTMGod_sWordR;
+            line-height: 56px;
+        }
+
+        .txt-2 {
+            font-size: 36px;
+            font-family: $UTMGod_sWordR;
+        }
+
+    }
+
+    .btn-submit {
+        margin-top: 1.250vw;
+    }
+}
+
+.block3 {
+    &__container {
+        @include flexbox;
+    }
+
+    &__heading {
+        font-family: $UTMGod_sWordR;
+        text-transform: uppercase;
+        font-size: 2.604vw;
+        line-height: 3.021vw;
+        margin-bottom: 2.344vw;
+        text-align: right;
+    }
+
+    &__des {
+        width: 21.250vw;
+        margin-left: auto;
+        text-align: right;
+        font-size: 0.938vw;
+        line-height: normal;
+        font-family: $SVN-Gotham-Book;
+    }
+
+    &__left {
+        color: #fff;
+        width: 32.292vw;
+        padding-right: 1.979vw;
+        padding-top: 8.594vw;
+    }
+
+    &__right {
+        @include flex(1);
+    }
+}
+
+.block4 {
+    position: relative;
+    height: 64.063vw;
+    width: 100%;
+    background: url(../assets/images/block4_bg.jpg);
+    background-size: 100% 100%;
+
+    &__container {
+        padding-top: 13.021vw;
+    }
+
+    &__heading {
+        @include flexbox;
+        @include flex-direction(column);
+        color: #fff;
+        margin-bottom: 1.302vw;
+
+        span {
+            text-transform: uppercase;
+            font-family: $UTMGod_sWordR;
+        }
+
+        .txt-1 {
+            font-size: 1.979vw;
+        }
+
+        .txt-2 {
+            font-size: 2.865vw;
+            line-height: 2.865vw;
+            margin-top: 0.521vw;
+        }
+
+        .txt-3 {
+            font-size: 4.531vw;
+            line-height: normal;
+        }
+    }
+
+    &__top {
+        margin-left: 54.948vw;
+    }
+
+    &__bottom {
+        @include flexbox;
+        margin-left: auto;
+        margin-right: auto;
+        width: calc(100% - 8.333vw);
+        margin-top: 6.667vw;
+
+    }
+
+    &__list-item {
+        @include flex(1);
+
+        @media(max-width: 767px) {
+            margin: 3vw 0;
+        }
+
+        &:nth-child(2) {
+            margin: 0 1.406vw;
+
+            @media(max-width: 767px) {
+                margin: 0;
+            }
+        }
+
+        .img {}
+
+        .text {
+            @include flexbox;
+            color: #fff;
+            padding-left: 1.979vw;
+            margin-top: 30px;
+        }
+
+        .number {
+            font-family: $vanitas;
+            font-size: 160px;
+            line-height: 140px;
+        }
+
+        .detail {
+            font-family: $UTMGod_sWordR;
+            text-transform: uppercase;
+            font-size: 31px;
+            line-height: 37px;
+            margin-top: 20px;
+            padding-left: 5px;
+        }
+    }
+}

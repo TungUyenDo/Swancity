@@ -3,7 +3,7 @@ $color_yellow: #f1c85f;
 body {
     font-size: 0.833vw;
     padding: 0;
-    background: #71747b;
+    background: #000;
 }
 
 a {
@@ -427,17 +427,30 @@ button {
 }
 
 .form {
-    input {
-        padding-left: 15px;
-        padding-left: 0.781vw;
+    &__group {
+        margin-bottom: 0.625vw;
+    }
 
-        @media (max-width: 767px) {
-            padding-left: 2.5vw;
-            font-size: 3.5vw;
+    &__control {
+        width: 100%;
+        height: 3.125vw;
+        padding: 1.042vw;
+        border-radius: 0.260vw;
+        background-color: #ffffff66;
+        color: #ffffff;
+        font-size: 18px;
+        font-family: $SVN-Gotham-Book;
+
+        &:hover,
+        &:focus {
+            outline: none;
+            box-shadow: none;
         }
 
         @mixin placeholder {
-            color: #000;
+            color: #ffffff;
+            font-size: 18px;
+            font-family: $SVN-Gotham-Book;
         }
 
         &::-webkit-input-placeholder {
@@ -460,10 +473,12 @@ button {
             @include placeholder;
         }
     }
+
+    &__button {}
 }
 
 .btn-submit {
-    // background-image: url("../assets/images/btn-submit-yellow.png");
+    background-image: url("../assets/images/btn_bg.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position-x: -1px;
@@ -476,9 +491,10 @@ button {
     border: none;
     font-weight: bold;
     border-radius: 0.521vw;
-    height: 3.385vw;
-    width: 18.229vw;
-    font-size: 1.563vw;
+    height: 3.125vw;
+    width: 13.542vw;
+    font-size: 1.042vw;
+    font-family: $SVN-Gotham-Book;
 
     @media (max-width: 767px) {
         font-size: 4.5vw;
@@ -491,7 +507,7 @@ button {
     }
 
     &:hover {
-        // background-image: url("../assets/images/btn-submit-white.png");
+        background-image: url("../assets/images/btn_bg_hover.png");
     }
 }
 
@@ -697,75 +713,18 @@ button {
         }
     }
 
-    &__dots,
-    &__text {
-        @include flexbox;
-        @include align-items(center);
-        z-index: 1;
-    }
-
-    &__dots {
-        @media (max-width: 767px) {
-            display: none;
-        }
-    }
-
-    &__dots_text {
-        color: $color_yellow;
-        // padding-right: 20px;
-        padding-right: 1.042vw;
-    }
-
-    &__dots_circle {
-        @include flexbox;
-        margin: 0;
-        padding: 0;
-
-        a {
-            // width: 13px;
-            // height: 13px;
-            width: 0.677vw;
-            height: 0.677vw;
-            margin: 0 0.313vw;
-            // margin: 0 6px;
-            background-color: #5d7286;
-            cursor: pointer;
-            display: block;
-            border-radius: 50%;
-
-            &.active,
-            &:hover {
-                background-color: $color_yellow;
-            }
-        }
-    }
-
-    &__text_logo {
-        // width: 65px;
-        width: 3vw;
-        display: block;
-        // margin: 0 20px;
-        margin: 0 1.042vw;
-
-        @media (max-width: 767px) {
-            width: 9vw;
-            margin: 0px 2.042vw;
-        }
-    }
-
     &__text_toggle {
         @include flexbox;
         @include align-items(center);
         cursor: pointer;
 
         .text {
-            color: #e1eaf3;
+            color: #fff;
             text-transform: uppercase;
-            // margin-right: 4px;
-            margin-right: 0.208vw;
-            font-size: 12px;
-            font-size: 0.625vw;
+            margin-right: 0.729vw;
+            font-size: 0.938vw;
             letter-spacing: 1px;
+            font-family: $SVN-Gotham-Book;
 
             @media (max-width: 767px) {
                 font-size: 3.5vw;
@@ -782,14 +741,11 @@ button {
             }
 
             .line {
-                background-color: #e1eaf3;
-                height: 0.104vw;
-                width: 0.938vw;
-                margin-bottom: 0.156vw;
+                background-color: #fff;
                 transition: all 0.2s ease;
-                // height: 2px;
-                // width: 18px;
-                // margin-bottom: 3px;
+                height: 0.104vw;
+                width: 1.406vw;
+                margin-bottom: 0.260vw;
 
                 @media (max-width: 767px) {
                     height: 0.625vw;
@@ -819,99 +775,6 @@ button {
                 // @include transform(rotate(45deg) translateY(2px) translateX(1px));
                 @media (max-width: 767px) {
                     @include transform(rotate(45deg) translateY(0.55vw) translateX(0.75vw));
-                }
-            }
-        }
-    }
-
-    &__absolute {
-        position: fixed;
-        right: 0;
-        z-index: 2;
-        text-align: right;
-        // top: 105px;
-        // padding-right: 20px;
-        // padding-bottom: 30px;
-        // padding-top: 30px;
-        width: 80%;
-        top: 5.208vw;
-        padding: 0;
-        padding-right: 1.042vw;
-        height: 0;
-        visibility: hidden;
-        opacity: 0;
-        transition: all 0.3s ease;
-
-        @media (max-width: 767px) {
-            width: 70%;
-            height: 100% !important;
-            background: #121d25d1;
-            top: 13vw;
-            padding: 8vw;
-            @include flexbox;
-            @include flex-direction(column);
-        }
-
-        &.active {
-            opacity: 1;
-            visibility: visible;
-            height: auto;
-            padding-top: 1.563vw;
-            padding-bottom: 1.563vw;
-        }
-
-        &::before {
-            content: "";
-            width: 50%;
-            height: 100%;
-            // background-image: url("../assets/images/menu_bg.png");
-            background-size: 100% auto;
-            background-position: right center;
-            position: absolute;
-            right: 0;
-            top: 0;
-
-            @media (max-width: 767px) {
-                display: none;
-            }
-        }
-
-        a {
-            position: relative;
-            // margin: 0 12px;
-            // font-size: 20px;
-            margin: 0 0.625vw;
-            font-size: 1.042vw;
-            color: #fff;
-            text-decoration: none;
-            z-index: 1;
-            @include transition(all 0.3s ease);
-
-            @media (max-width: 767px) {
-                font-size: 4.5vw;
-                margin: 2vw 0;
-            }
-
-            &.active,
-            &:hover {
-                position: relative;
-                // padding-bottom: 5px;
-                padding-bottom: 0.26vw;
-                color: $color_yellow;
-
-                &::before {
-                    position: absolute;
-                    content: "";
-                    bottom: 0;
-                    height: 1px;
-                    width: 80%;
-                    left: 50%;
-                    background-color: $color_yellow;
-                    @include transform(translateX(-50%));
-
-                    @media (max-width: 767px) {
-                        display: none;
-                    }
                 }
             }
         }

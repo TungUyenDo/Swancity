@@ -5,6 +5,22 @@ $UTMGod_sWordRItalic: "UTMGod_sWordRItalic";
 $UVFVanitasRegular: "UVFVanitasRegular";
 
 
+$SVN-Gotham: "SVN-Gotham";
+$SVN-Gotham-Book: "SVN-Gotham-Book";
+
+$vanitas: "vanitas";
+
+
+@font-face {
+    font-family: "vanitas";
+    src: url("../assets/fonts/vanitas/vanitas.eot");
+    src: url("../assets/fonts/vanitas/vanitas.eot") format("embedded-opentype"),
+        url("../assets/fonts/vanitas/vanitas.woff2") format("woff2"),
+        url("../assets/fonts/vanitas/vanitas.woff") format("woff"),
+        url("../assets/fonts/vanitas/vanitas.ttf") format("truetype"),
+        url("../assets/fonts/vanitas/vanitas.svg#UTMGod_sWordBold") format("svg");
+}
+
 @font-face {
     font-family: "UTMGod_sWordBold";
     src: url("../assets/fonts/UTMGod_sWordBold/UTMGod_sWordBold.eot");
@@ -53,4 +69,22 @@ $UVFVanitasRegular: "UVFVanitasRegular";
         url("../assets/fonts/UVFVanitasRegular/UVFVanitasRegular.woff") format("woff"),
         url("../assets/fonts/UVFVanitasRegular/UVFVanitasRegular.ttf") format("truetype"),
         url("../assets/fonts/UVFVanitasRegular/UVFVanitasRegular.svg#UVFVanitasRegular") format("svg");
+}
+
+@font-face {
+    font-family: "SVN-Gotham";
+    src: url("../assets/fonts/SVN-Gotham-Regular/SVN-Gotham.eot");
+    src: url("../assets/fonts/SVN-Gotham-Regular/SVN-Gotham.eot") format("embedded-opentype"),
+        url("../assets/fonts/SVN-Gotham-Regular/SVN-Gotham.woff") format("woff"),
+        url("../assets/fonts/SVN-Gotham-Regular/SVN-Gotham.ttf") format("truetype"),
+        url("../assets/fonts/SVN-Gotham-Regular/SVN-Gotham.svg#SVN-Gotham") format("svg");
+}
+
+@font-face {
+    font-family: "SVN-Gotham-Book";
+    src: url("../assets/fonts/SVN-Gotham-Book/SVN-Gotham-Book.eot");
+    src: url("../assets/fonts/SVN-Gotham-Book/SVN-Gotham-Book.eot") format("embedded-opentype"),
+        url("../assets/fonts/SVN-Gotham-Book/SVN-Gotham-Book.woff") format("woff"),
+        url("../assets/fonts/SVN-Gotham-Book/SVN-Gotham-Book.ttf") format("truetype"),
+        url("../assets/fonts/SVN-Gotham-Book/SVN-Gotham-Book.svg#SVN-Gotham-Book") format("svg");
 }

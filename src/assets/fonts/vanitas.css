@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'vanitas';
+    src: url('fonts/vanitas.eot');
+    src: url('fonts/vanitas.eot') format('embedded-opentype'),
+         url('fonts/vanitas.woff2') format('woff2'),
+         url('fonts/vanitas.woff') format('woff'),
+         url('fonts/vanitas.ttf') format('truetype'),
+         url('fonts/vanitas.svg#vanitas') format('svg');
+}
