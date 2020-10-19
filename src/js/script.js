@@ -16,10 +16,12 @@ var MainScript = (function () {
         self.Block7ValidateForm();
         self.Block11ValidateForm();
         self.Block5Slider();
+        self.Block10Slider();
         self.Block8Slider();
         self.Block8Tabs();
         self.Menu();
         self.OpenMenu();
+        self.CloseMenu();
     }
     var _resize = function () { }
 
@@ -30,6 +32,19 @@ var MainScript = (function () {
             $('.block8__slider').removeClass('show')
             $('.block8__slider[data-slide="' + href + '"]').addClass('show')
         })
+    }
+
+    this.Block10Slider = function () {
+        if ($(".block10__sliders").length === 0) {
+            return false
+        }
+
+        $('.block10__sliders').slick({
+            slidesToShow: 1,
+            arrows: false,
+            dots: true,
+            autoplay: false,
+        });
     }
 
     this.Block5Slider = function () {
@@ -52,7 +67,7 @@ var MainScript = (function () {
         $(".block8__slider").slick({
             arrows: false,
             dots: true,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 3000,
             slidesToShow: 2
         });
@@ -134,45 +149,51 @@ var MainScript = (function () {
             name: '.block11Note',
             validators: []
         }]
-        var $submit = ".block7__form-button button";
+        var $submit = ".block11__form-button button";
         validateForm($submit, form);
     }
 
     this.Menu = function () {
-        $('.menu__dots_circle a').click(function (e) {
+        $('.menu__absolute a').click(function (e) {
             e.preventDefault();
 
-            $('.menu__dots_circle a').removeClass('active');
+            $('.menu__absolute a').removeClass('active');
             if ($(this).hasClass('active')) {
                 $(this).removeClass('active')
             } else {
                 $(this).addClass('active')
             }
 
-            $('.menu__absolute a').removeClass('active');
-            $('.menu__absolute a[link="' + $(this).attr('link') + '"]').addClass('active')
-
-            goToByScroll($(this).attr('link'));
-
-            let name = $(this).attr('name');
-            $('.menu__dots_text').text(name)
+            if($(this).attr('link') != ''){
+                goToByScroll($(this).attr('link'));
+            }
 
         })
 
         function goToByScroll(echo) {
             $('html,body').animate({
-                scrollTop: $("." + echo).offset().top - 50
+                scrollTop: $("." + echo).offset().top - 50,
             }, 'slow');
         }
     }
 
     this.OpenMenu = function () {
-        $('.menu__text').click(function () {
+        $('.menu').click(function () {
             if ($('.menu__text_toggle').hasClass('active')) {
                 $('.menu__text_toggle').removeClass('active')
                 $('.menu__absolute').removeClass('active')
             } else {
                 $('.menu__text_toggle').addClass('active')
+                $('.menu__absolute').addClass('active')
+            }
+        })
+    }
+    this.CloseMenu = function () {
+        $('.menu__toggle_close').click(function () {
+            $('.menu__text_toggle').removeClass('active')
+            if ($('.menu__absolute').hasClass('active')) {
+                $('.menu__absolute').removeClass('active')
+            } else {
                 $('.menu__absolute').addClass('active')
             }
         })
@@ -265,14 +286,14 @@ $(window).on("resize", function () {
 });
 
 var sections = $('section')
-    , nav = $('.menu__dots_circle')
+    , nav = $('.menu__absolute')
     , nav_height = nav.outerHeight();
 
 $(window).on('scroll', function () {
     var cur_pos = $(this).scrollTop();
 
     sections.each(function () {
-        var top = $(this).offset().top - nav_height - 80,
+        var top = $(this).offset().top - 50,
             bottom = top + $(this).outerHeight();
 
         if (cur_pos >= top && cur_pos <= bottom) {
