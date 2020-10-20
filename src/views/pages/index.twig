@@ -1,117 +1,116 @@
 {% set page_title = 'Sun Shine' %}
 {% extends "../elements/_base.twig" %}
-
 {% block content %}
-
-{#
-<div class="social">
-    <figure class="btn_baogia">
-        <img src="./assets/images/btn_baogia.png" alt="SUNSHINE CRYSTAL RIVER">
-    </figure>
-    <a href="#" class="social__item fb">
-        <img src="./assets/images/social_fb.png" alt="SUNSHINE CRYSTAL RIVER">
-    </a>
-    <a href="#" class="social__item phone">
-        <img src="./assets/images/social_phone.png" alt="SUNSHINE CRYSTAL RIVER">
-    </a>
-</div>
-#}
-<div class="menu">
-    {# active #}
-    <div class="menu__text_toggle">
-        <span class="text">
-            menu
-        </span>
-        <div class="lines">
-            <span class="line line_1"></span>
-            <span class="line line_2"></span>
-            <span class="line line_3"></span>
+    {#
+    <div class="social">
+        <figure class="btn_baogia">
+            <img src="./assets/images/btn_baogia.png" alt="SUNSHINE CRYSTAL RIVER">
+        </figure>
+        <a href="#" class="social__item fb">
+            <img src="./assets/images/social_fb.png" alt="SUNSHINE CRYSTAL RIVER">
+        </a>
+        <a href="#" class="social__item phone">
+            <img src="./assets/images/social_phone.png" alt="SUNSHINE CRYSTAL RIVER">
+        </a>
+    </div>
+    #}
+    <div class="menu">
+        {# active #}
+        <div class="menu__text_toggle">
+            <span class="text">
+                menu
+            </span>
+            <div class="lines">
+                <span class="line line_1"></span>
+                <span class="line line_2"></span>
+                <span class="line line_3"></span>
+            </div>
         </div>
     </div>
-</div>
-<div class="menu__absolute">
-    <a link="" href="#" class="menu__toggle_close">X</a>
-    <a link="trangchu" href="#trangchu" class="active">Trang chủ</a>
-    <a link="gioithieu" href="#gioithieu">giới thiệu</a>
-    <a link="vitri" href="#vitri">vị trí</a>
-    <a link="tienich" href="#tienich">Tiện ích</a>
-    <a link="matbang" href="#matbang">mặt bằng</a>
-    <a link="sanpham" href="#sanpham">sản phẩm</a>
-    <a link="csbh" href="#csbh">csbh</a>
-    <a link="tintuc" href="#tintuc">tin tức</a>
-</div>
-{# nhớ thêm active để show  #}
-<div class="message">
-    <div class="message__content text-center">
-        <div class="message__title">Bạn đã đăng ký tư vấn thành công.</div>
-        <button class="btn-submit" type="button">Đóng</button>
+    <div class="menu__absolute">
+        <a link="" href="#" class="menu__toggle_close">X</a>
+        <a link="trangchu" href="#trangchu" class="active">Trang chủ</a>
+        <a link="gioithieu" href="#gioithieu">giới thiệu</a>
+        <a link="vitri" href="#vitri">vị trí</a>
+        <a link="tienich" href="#tienich">Tiện ích</a>
+        <a link="matbang" href="#matbang">mặt bằng</a>
+        <a link="sanpham" href="#sanpham">sản phẩm</a>
+        <a link="csbh" href="#csbh">csbh</a>
+        <a link="tintuc" href="#tintuc">tin tức</a>
     </div>
-</div>
-{#  nhớ thêm active để show  #}
-<div class="loading">
-    <div class="spinner-border" role="status">
-  <span class="sr-only">Loading...</span>
-</div>
-</div>
-{# modal đăng kí #}
-<div
-    class="modal fade in popup"
-    id="Popup"
-    tabindex="-1"
-    role="dialog"
->
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <span class="close" data-dismiss="modal" aria-label="Close"> x</span>
-                <div class="popup__content">
-                    <div class="popup__wrap left">
-                        <img src="./assets/images/popup_form_img.jpg" alt="ĐĂNG KÝ TẠI ĐÂY ĐỂ NHẬN TƯ VẤN VÀ BÁO GIÁ">
-                    </div>
-                    <div class="popup__wrap right">
-                        <div class="popup__title">
-                            ĐĂNG KÝ TẠI ĐÂY
-                            <br>
-                            ĐỂ NHẬN TƯ VẤN VÀ BÁO GIÁ
+    {# nhớ thêm active để show  #}
+    <div class="message">
+        <div class="message__content text-center">
+            <div class="message__title">Bạn đã đăng ký tư vấn thành công.</div>
+            <button class="btn-submit" type="button">Đóng</button>
+        </div>
+    </div>
+    {#  nhớ thêm active để show  #}
+    <div class="loading">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    {# modal đăng kí #}
+    <div
+        class="modal fade in popup"
+        id="Popup"
+        tabindex="-1"
+        role="dialog"
+        >
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <span class="close" data-dismiss="modal" aria-label="Close"> x</span>
+                    <div class="popup__content">
+                        <div class="popup__wrap left">
+                            <img src="./assets/images/popup_form_img.jpg" alt="ĐĂNG KÝ TẠI ĐÂY ĐỂ NHẬN TƯ VẤN VÀ BÁO GIÁ">
                         </div>
-                        <form method="POST">
-                            <div class="popup__form form">
-                                <div class="form__group">
-                                    <input
+                        <div class="popup__wrap right">
+                            <div class="popup__title">
+                                ĐĂNG KÝ TẠI ĐÂY
+                                <br>
+                                ĐỂ NHẬN TƯ VẤN VÀ BÁO GIÁ
+                            </div>
+                            <form method="POST">
+                                <div class="popup__form form">
+                                    <div class="form__group">
+                                        <input
                                         class="form__control PopupName"
                                         name="name"
                                         type="text"
                                         placeholder="Họ và tên"
-                                    >
-                                </div>
-                                <div class="form__group">
-                                    <input
+                                        >
+                                    </div>
+                                    <div class="form__group">
+                                        <input
                                         class="form__control PopupEmail"
                                         name="email"
                                         type="text"
                                         placeholder="Email"
-                                    >
-                                </div>
-                                <div class="form__group">
-                                    <input
+                                        >
+                                    </div>
+                                    <div class="form__group">
+                                        <input
                                         class="form__control PopupPhone"
                                         name="phone"
                                         type="text"
                                         placeholder="Số điện thoại"
-                                    >
-                                </div>
-                                <div class="form__group">
-                                    <input
+                                        >
+                                    </div>
+                                    <div class="form__group">
+                                        <input
                                         class="form__control PopupNote"
                                         name="note"
                                         type="text"
                                         placeholder="Ghi chú nhu cầu"
-                                    >
-                                </div>
-                                <div class="popup__button text-center mt-4">
-                                    <button class="btn-submit submit-form" type="submit" disabled="disabled">
+                                        >
+                                    </div>
+                                    <div class="popup__button text-center mt-4">
+                                        <button class="btn-submit submit-form" type="submit" disabled="disabled">
                                         Đăng ký
-                                    </button>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -120,704 +119,742 @@
             </div>
         </div>
     </div>
-</div>
-{# modal news #}
-<div
-    class="modal fade in show news"
-    id="News"
-    tabindex="-1"
-    role="dialog"
->
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <span class="close" data-dismiss="modal" aria-label="Close"> x</span>
-            <div class="modal-body">
-                <div class="news__title">
-                    'Giá là yếu tố chính
-                    <br>
-                    quyết định việc mua căn hộ'
-                </div>
-                <div class="news__content">
-                    <div class="news__wrap left">
-                        <img src="./assets/images/popup_news_img.jpg" alt="Giá là yếu tố chính quyết định việc mua căn hộ">
-                        <div class="mt-4 text-center">
-                            <button class="btn-submit submit-form" type="submit" disabled="disabled">
-                                Đăng ký
-                            </button>
-                        </div>
+    {# modal news #}
+    <div
+        class="modal fade in show news"
+        id="News"
+        tabindex="-1"
+        role="dialog"
+        >
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <span class="close" data-dismiss="modal" aria-label="Close"> x</span>
+                <div class="modal-body">
+                    <div class="news__title">
+                        'Giá là yếu tố chính
+                        <br>
+                        quyết định việc mua căn hộ'
                     </div>
-                    <div class="news__wrap right">
-                        <p>
-                            Theo các chuyên gia Savills, giá là yếu tố chính, bên cạnh diện tích, quyết định việc mua căn
-                            hộ của khách hàng.
-                        </p>
-                        <p>
-                            Tại họp báo công bố báo cáo quý III mới đây, bà Đỗ Thu Hằng, Giám đốc bộ phận nghiên cứu và
-                            tư vấn Savills Hà Nội cho biết, hiện rất ít căn hộ có giá 20 triệu đồng một m2. "Trong
-                            26.800 căn hộ sơ cấp, chỉ có khoảng 700 căn ở mức giá này", bà nói.
-                        </p>
-                        <p>
-                            Giá căn hộ trên thị trường sơ cấp trung bình đã tăng 3% theo quý, 10% theo năm, lên đến 1.500
-                            USD (hơn 34,5 triệu đồng) mỗi m2 trong quý III. Giá sơ cấp là giá chủ đầu tư bán trực tiếp
-                            ra thị trường, cứ trung bình mỗi năm tăng 5%, theo Savills. Hiện giá tại các dự án ở khu vực
-                            vành đai - vốn được xem là rẻ, đang thu hẹp khoảng cách với nội thành. Nguyên nhân là các
-                            chủ đầu tư tập trung nâng cấp hạ tầng, tiện ích, đẩy mức giá lên.
-                        </p>
-                        <p>
-                            Trong khi đó, bà Hằng nhận định, nhu cầu căn hộ bình dân tăng nhanh. Với 5.200 căn hộ bán
-                            được, 99% đến từ phân khúc hạng B và C. Thị trường đang rất nhạy cảm về giá cao. Một số dự
-                            án ở Mỹ Đình có giá 50-60 triệu đồng mỗi m2, cản trở phía đại lý vào, giảm sự thu hút của
-                            người mua. "Giá và diện tích là các yếu tố chính quyết định việc mua nhà chứ không phải các
-                            tiện ích, hạ tầng xung quanh", bà Hằng nói.
-                        </p>
-                        <p>
-                            Ngược lại, giá tại thị trường thứ cấp có sự giảm nhẹ vì dịch bệnh, khoảng 1% theo quý, xuống
-                            còn 1.157 USD một m2. Các nhà đầu tư đang chịu áp lực do giá không tăng như kỳ vọng nên muốn
-                            rút ra khỏi thị trường.
-                        </p>
-                        <p>
-                            Tuy nhiên, báo cáo của Savills cũng cho thấy, cầu giảm do thiếu nguồn cung mới và hàng tồn
-                            kho giá cao. Trong quý vừa qua chỉ có 3.100 căn hộ từ 4 dự án mới và giai đoạn tiếp theo của
-                            9 dự án tung bán, giảm 50% theo quý và 60% theo năm.
-                        </p>
-                        <p>
-                            "Nguồn cung mới đang thấp nhất trong 5 năm qua", bà Hằng bình luận. Nguồn cung sơ cấp giảm
-                            khi chủ đầu tư hoãn tung bán mới vì sợ các yếu tố bất ổn. Thị trường căn hộ còn bị tác động
-                            từ làn sóng Covid-19 lần hai và tháng Ngâu.Theo các chuyên gia Savills, giá là yếu tố chính,
-                            bên cạnh diện tích, quyết định việc mua căn hộ của khách hàng.
-                        </p>
-                        <p>
-                            Tại họp báo công bố báo cáo quý III mới đây, bà Đỗ Thu Hằng, Giám đốc bộ phận nghiên cứu và
-                            tư vấn Savills Hà Nội cho biết, hiện rất ít căn hộ có giá 20 triệu đồng một m2. "Trong
-                            26.800 căn hộ sơ cấp, chỉ có khoảng 700 căn ở mức giá này", bà nói.
-                        </p>
-                        <p>
-                            Giá căn hộ trên thị trường sơ cấp trung bình đã tăng 3% theo quý, 10% theo năm, lên đến
-                            1.500 USD (hơn 34,5 triệu đồng) mỗi m2 trong quý III. Giá sơ cấp là giá chủ đầu tư bán trực
-                            tiếp ra thị trường, cứ trung bình mỗi năm tăng 5%, theo Savills. Hiện giá tại các dự án ở
-                            khu vực vành đai - vốn được xem là rẻ, đang thu hẹp khoảng cách với nội thành. Nguyên nhân
-                            là các chủ đầu tư tập trung nâng cấp hạ tầng, tiện ích, đẩy mức giá lên.
-                        </p>
-                        <p>
-                            Trong khi đó, bà Hằng nhận định, nhu cầu căn hộ bình dân tăng nhanh. Với 5.200 căn hộ bán
-                            được, 99% đến từ phân khúc hạng B và C. Thị trường đang rất nhạy cảm về giá cao. Một số dự
-                            án ở Mỹ Đình có giá 50-60 triệu đồng mỗi m2, cản trở phía đại lý vào, giảm sự thu hút của
-                            người mua. "Giá và diện tích là các yếu tố chính quyết định việc mua nhà chứ không phải các
-                            tiện ích, hạ tầng xung quanh", bà Hằng nói.
-                        </p>
-                        <p>
-                            Ngược lại, giá tại thị trường thứ cấp có sự giảm nhẹ vì dịch bệnh, khoảng 1% theo quý, xuống
-                            còn 1.157 USD một m2. Các nhà đầu tư đang chịu áp lực do giá không tăng như kỳ vọng nên muốn
-                            rút ra khỏi thị trường.
-                        </p>
-                        <p>
-                            Tuy nhiên, báo cáo của Savills cũng cho thấy, cầu giảm do thiếu nguồn cung mới và hàng tồn
-                            kho giá cao. Trong quý vừa qua chỉ có 3.100 căn hộ từ 4 dự án mới và giai đoạn tiếp theo của
-                            9 dự án tung bán, giảm 50% theo quý và 60% theo năm.
-                        </p>
-                        <p>
-                            "Nguồn cung mới đang thấp nhất trong 5 năm qua", bà Hằng bình luận. Nguồn cung sơ cấp giảm
-                            khi chủ đầu tư hoãn tung bán mới vì sợ các yếu tố bất ổn. Thị trường căn hộ còn bị tác động
-                            từ làn sóng Covid-19 lần hai và tháng Ngâu.
-                        </p>
+                    <div class="news__content">
+                        <div class="news__wrap left">
+                            <img src="./assets/images/popup_news_img.jpg" alt="Giá là yếu tố chính quyết định việc mua căn hộ">
+                            <div class="btn-submit btn-discount mt-4 text-center" data-toggle="modal" data-target="#Popup">
+                                Đăng kí
+                            </div>
+                        </div>
+                        <div class="news__wrap right">
+                            <p>
+                                Theo các chuyên gia Savills, giá là yếu tố chính, bên cạnh diện tích, quyết định việc mua căn
+                                hộ của khách hàng.
+                            </p>
+                            <p>
+                                Tại họp báo công bố báo cáo quý III mới đây, bà Đỗ Thu Hằng, Giám đốc bộ phận nghiên cứu và
+                                tư vấn Savills Hà Nội cho biết, hiện rất ít căn hộ có giá 20 triệu đồng một m2. "Trong
+                                26.800 căn hộ sơ cấp, chỉ có khoảng 700 căn ở mức giá này", bà nói.
+                            </p>
+                            <p>
+                                Giá căn hộ trên thị trường sơ cấp trung bình đã tăng 3% theo quý, 10% theo năm, lên đến 1.500
+                                USD (hơn 34,5 triệu đồng) mỗi m2 trong quý III. Giá sơ cấp là giá chủ đầu tư bán trực tiếp
+                                ra thị trường, cứ trung bình mỗi năm tăng 5%, theo Savills. Hiện giá tại các dự án ở khu vực
+                                vành đai - vốn được xem là rẻ, đang thu hẹp khoảng cách với nội thành. Nguyên nhân là các
+                                chủ đầu tư tập trung nâng cấp hạ tầng, tiện ích, đẩy mức giá lên.
+                            </p>
+                            <p>
+                                Trong khi đó, bà Hằng nhận định, nhu cầu căn hộ bình dân tăng nhanh. Với 5.200 căn hộ bán
+                                được, 99% đến từ phân khúc hạng B và C. Thị trường đang rất nhạy cảm về giá cao. Một số dự
+                                án ở Mỹ Đình có giá 50-60 triệu đồng mỗi m2, cản trở phía đại lý vào, giảm sự thu hút của
+                                người mua. "Giá và diện tích là các yếu tố chính quyết định việc mua nhà chứ không phải các
+                                tiện ích, hạ tầng xung quanh", bà Hằng nói.
+                            </p>
+                            <p>
+                                Ngược lại, giá tại thị trường thứ cấp có sự giảm nhẹ vì dịch bệnh, khoảng 1% theo quý, xuống
+                                còn 1.157 USD một m2. Các nhà đầu tư đang chịu áp lực do giá không tăng như kỳ vọng nên muốn
+                                rút ra khỏi thị trường.
+                            </p>
+                            <p>
+                                Tuy nhiên, báo cáo của Savills cũng cho thấy, cầu giảm do thiếu nguồn cung mới và hàng tồn
+                                kho giá cao. Trong quý vừa qua chỉ có 3.100 căn hộ từ 4 dự án mới và giai đoạn tiếp theo của
+                                9 dự án tung bán, giảm 50% theo quý và 60% theo năm.
+                            </p>
+                            <p>
+                                "Nguồn cung mới đang thấp nhất trong 5 năm qua", bà Hằng bình luận. Nguồn cung sơ cấp giảm
+                                khi chủ đầu tư hoãn tung bán mới vì sợ các yếu tố bất ổn. Thị trường căn hộ còn bị tác động
+                                từ làn sóng Covid-19 lần hai và tháng Ngâu.Theo các chuyên gia Savills, giá là yếu tố chính,
+                                bên cạnh diện tích, quyết định việc mua căn hộ của khách hàng.
+                            </p>
+                            <p>
+                                Tại họp báo công bố báo cáo quý III mới đây, bà Đỗ Thu Hằng, Giám đốc bộ phận nghiên cứu và
+                                tư vấn Savills Hà Nội cho biết, hiện rất ít căn hộ có giá 20 triệu đồng một m2. "Trong
+                                26.800 căn hộ sơ cấp, chỉ có khoảng 700 căn ở mức giá này", bà nói.
+                            </p>
+                            <p>
+                                Giá căn hộ trên thị trường sơ cấp trung bình đã tăng 3% theo quý, 10% theo năm, lên đến
+                                1.500 USD (hơn 34,5 triệu đồng) mỗi m2 trong quý III. Giá sơ cấp là giá chủ đầu tư bán trực
+                                tiếp ra thị trường, cứ trung bình mỗi năm tăng 5%, theo Savills. Hiện giá tại các dự án ở
+                                khu vực vành đai - vốn được xem là rẻ, đang thu hẹp khoảng cách với nội thành. Nguyên nhân
+                                là các chủ đầu tư tập trung nâng cấp hạ tầng, tiện ích, đẩy mức giá lên.
+                            </p>
+                            <p>
+                                Trong khi đó, bà Hằng nhận định, nhu cầu căn hộ bình dân tăng nhanh. Với 5.200 căn hộ bán
+                                được, 99% đến từ phân khúc hạng B và C. Thị trường đang rất nhạy cảm về giá cao. Một số dự
+                                án ở Mỹ Đình có giá 50-60 triệu đồng mỗi m2, cản trở phía đại lý vào, giảm sự thu hút của
+                                người mua. "Giá và diện tích là các yếu tố chính quyết định việc mua nhà chứ không phải các
+                                tiện ích, hạ tầng xung quanh", bà Hằng nói.
+                            </p>
+                            <p>
+                                Ngược lại, giá tại thị trường thứ cấp có sự giảm nhẹ vì dịch bệnh, khoảng 1% theo quý, xuống
+                                còn 1.157 USD một m2. Các nhà đầu tư đang chịu áp lực do giá không tăng như kỳ vọng nên muốn
+                                rút ra khỏi thị trường.
+                            </p>
+                            <p>
+                                Tuy nhiên, báo cáo của Savills cũng cho thấy, cầu giảm do thiếu nguồn cung mới và hàng tồn
+                                kho giá cao. Trong quý vừa qua chỉ có 3.100 căn hộ từ 4 dự án mới và giai đoạn tiếp theo của
+                                9 dự án tung bán, giảm 50% theo quý và 60% theo năm.
+                            </p>
+                            <p>
+                                "Nguồn cung mới đang thấp nhất trong 5 năm qua", bà Hằng bình luận. Nguồn cung sơ cấp giảm
+                                khi chủ đầu tư hoãn tung bán mới vì sợ các yếu tố bất ổn. Thị trường căn hộ còn bị tác động
+                                từ làn sóng Covid-19 lần hai và tháng Ngâu.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-{# block1 #}
-<section class="block1 trangchu" id="trangchu">
-    <div class="block1__container">
-        <div class="block1__img_mb">
-            <img src="./assets/images/block1_bg_mobile.jpg" alt="thiết kế độc bản thăng hoa thành tựu">
-        </div>
-        <div class="block1__heading wow fadeInDown">
-            <img src="./assets/images/slogan.png" alt="thiết kế độc bản thăng hoa thành tựu">
-        </div>
-        <div class="block1__wrap-form">
-            <a href="#" class="block1__logo wow fadeInUp">
-                <figure class="logo_1">
-                    <img src="./assets/images/logo.png" alt="swancity">
-                </figure>
-                <figure class="logo_2">
-                    <img src="./assets/images/the_icon.png" alt="swancity">
-                </figure>
-            </a>
-            <div class="block1__form-title wow fadeInUp">
-                ĐĂNG KÝ TẠI ĐÂY
-                <br>
-                ĐỂ NHẬN TƯ VẤN VÀ BÁO GIÁ
+    {# block1 #}
+    <section class="block1 trangchu" id="trangchu">
+        <div class="block1__container">
+            <div class="block1__img_mb">
+                <img src="./assets/images/block1_bg_mobile.jpg" alt="thiết kế độc bản thăng hoa thành tựu">
             </div>
-            <div class="block1__form form">
-                <div class="form__group wow fadeInUp" data-wow-delay="0.1s">
-                    <input
+            <div class="block1__heading wow fadeInDown">
+                <img src="./assets/images/slogan.png" alt="thiết kế độc bản thăng hoa thành tựu">
+            </div>
+            <div class="block1__wrap-form">
+                <a href="#" class="block1__logo wow fadeInUp">
+                    <figure class="logo_1">
+                        <img src="./assets/images/logo.png" alt="swancity">
+                    </figure>
+                    <figure class="logo_2">
+                        <img src="./assets/images/the_icon.png" alt="swancity">
+                    </figure>
+                </a>
+                <div class="block1__form-title wow fadeInUp">
+                    ĐĂNG KÝ TẠI ĐÂY
+                    <br>
+                    ĐỂ NHẬN TƯ VẤN VÀ BÁO GIÁ
+                </div>
+                <div class="block1__form form">
+                    <div class="form__group wow fadeInUp" data-wow-delay="0.1s">
+                        <input
                         class="form__control block1Name"
                         name="name"
                         type="text"
                         placeholder="Họ và tên"
-                    >
-                </div>
-                <div class="form__group wow fadeInUp" data-wow-delay="0.2s">
-                    <input
+                        >
+                    </div>
+                    <div class="form__group wow fadeInUp" data-wow-delay="0.2s">
+                        <input
                         class="form__control block1Phone"
                         name="phone"
                         type="text"
                         placeholder="Số điện thoại"
-                    >
-                </div>
-                <div class="form__group wow fadeInUp" data-wow-delay="0.3s">
-                    <input
+                        >
+                    </div>
+                    <div class="form__group wow fadeInUp" data-wow-delay="0.3s">
+                        <input
                         class="form__control block1Email"
                         name="email"
                         type="text"
                         placeholder="Email"
-                    >
-                </div>
-                <div class="form__group wow fadeInUp" data-wow-delay="0.4s">
-                    <input
+                        >
+                    </div>
+                    <div class="form__group wow fadeInUp" data-wow-delay="0.4s">
+                        <input
                         class="form__control block1Note"
                         name="note"
                         type="text"
                         placeholder="Ghi chú yêu cầu"
-                    >
-                </div>
-                <div class="block1__form-button form__button text-center wow fadeInUp" data-wow-delay="0.5s">
-                    <button class="btn-submit submit-form" type="submit" disabled="disabled">
+                        >
+                    </div>
+                    <div class="block1__form-button form__button text-center wow fadeInUp" data-wow-delay="0.5s">
+                        <button class="btn-submit submit-form" type="submit" disabled="disabled">
                         Đăng ký
-                    </button>
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <div class="block1__des wow fadeInUp">
-                Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền vững
-                làm tiêu chí, lấy sự sáng tạo làm nền tảng. Các thiết kế biệt thự vừa đáp ứng được nhu cầu của hiện tại,
-                vừa linh hoạt đón đầu những thay đổi trong tương lai.
-            </div>
-            <a href="#" class="block1__created-by wow fadeInUp">
-                <img class="logo_1" src="./assets/images/logo_swancity.png" alt="swancity">
-            </a>
-        </div>
-    </div>
-</section>
-<section class="block2 gioithieu" id="gioithieu">
-    <div class="block2__container">
-        <div class="block2__heading wow fadeInDown">
-            <span class="txt-1">
-                Tuyệt phẩm
-                <br>
-                dinh thự
-            </span>
-            <span class="txt-2">đỉnh cao biểu tượng</span>
-        </div>
-        <div class="btn-submit btn-discount wow fadeInDown d-block" data-toggle="modal" data-target="#Popup">
-            nhận chiết khấu
-        </div>
-    </div>
-</section>
-<section class="block3 vitri" id="vitri">
-    <div class="block3__container">
-        <div class="block3__left">
-            <div class="block3__heading wow fadeInLeft">
-                vị trí chiến lượt
-                <br>
-                của the icon
-            </div>
-            <div class="block3__des wow fadeInLeft">
-                Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu,
-                lấy giá trị bền vững làm tiêu chí, lấy sự sáng tạo làm nền tảng. Các thiết kế biệt thự vừa đáp ứng được
-                nhu cầu của hiện tại, vừa linh hoạt đón đầu những thay đổi trong tương lai.
+                <div class="block1__des wow fadeInUp">
+                    Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền vững
+                    làm tiêu chí, lấy sự sáng tạo làm nền tảng. Các thiết kế biệt thự vừa đáp ứng được nhu cầu của hiện tại,
+                    vừa linh hoạt đón đầu những thay đổi trong tương lai.
+                </div>
+                <a href="#" class="block1__created-by wow fadeInUp">
+                    <img class="logo_1" src="./assets/images/logo_swancity.png" alt="swancity">
+                </a>
             </div>
         </div>
-        <figure class="block3__right">
-            <img class="wow fadeIn" src="./assets/images/map.jpg" alt="swancity">
-        </figure>
-    </div>
-</section>
-<section class="block4 tienich" id="tienich">
-    <div class="block4__container">
-        <div class="block4__img_mb">
-            <img src="./assets/images/block4_img_mb.jpg" alt="3 giá trị tạo nên những biểu tượng nghệ thuật">
-        </div>
-        <div class="block4__top">
-            <div class="block4__heading wow fadeInRight">
-                <span class="txt-1">3 giá trị tạo nên</span>
-                <span class="txt-2">những biểu tượng</span>
-                <span class="txt-3">nghệ thuật</span>
+    </section>
+    <section class="block2 gioithieu" id="gioithieu">
+        <div class="block2__container">
+            <div class="block2__heading wow fadeInDown">
+                <span class="txt-1">
+                    Tuyệt phẩm
+                    <br>
+                    dinh thự
+                </span>
+                <span class="txt-2">đỉnh cao biểu tượng</span>
             </div>
-            <div class="btn-submit btn-discount ml-0" data-toggle="modal" data-target="#Popup">
+            <div class="btn-submit btn-discount wow fadeInDown d-block" data-toggle="modal" data-target="#Popup">
                 nhận chiết khấu
             </div>
         </div>
-        <div class="block4__bottom">
-            <div class="block4__list-item wow fadeInUp">
-                <figure class="img">
-                    <img src="./assets/images/step1.jpg" alt="vị trí chiến lượt <br> liền kề sân bay & khu công nghệ cao">
-                </figure>
-                <div class="text">
-                    <span class="number">1</span>
-                    <span class="detail">
-                        vị trí chiến lượt
-                        <br>
-                        liền kề sân bay &
-                        <br>
-                        khu công nghệ cao
-                    </span>
+    </section>
+    <section class="block3 vitri" id="vitri">
+        <div class="block3__container">
+            <div class="block3__left">
+                <div class="block3__heading wow fadeInLeft">
+                    vị trí chiến lượt
+                    <br>
+                    của the icon
+                </div>
+                <div class="block3__des wow fadeInLeft">
+                    Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu,
+                    lấy giá trị bền vững làm tiêu chí, lấy sự sáng tạo làm nền tảng. Các thiết kế biệt thự vừa đáp ứng được
+                    nhu cầu của hiện tại, vừa linh hoạt đón đầu những thay đổi trong tương lai.
                 </div>
             </div>
-            <div class="block4__list-item wow fadeInUp" data-wow-delay="0.1s">
-                <figure class="img">
-                    <img src="./assets/images/step2.jpg" alt="cộng đồng triệu phú quốc tế">
-                </figure>
-                <div class="text">
-                    <span class="number">2</span>
-                    <span class="detail">
-                        cộng đồng
-                        <br>
-                        triệu phú quốc tế
-                    </span>
-                </div>
-            </div>
-            <div class="block4__list-item wow fadeInUp" data-wow-delay="0.2s">
-                <figure class="img">
-                    <img src="./assets/images/step3.jpg" alt="dinh thự mang tính biểu tượng">
-                </figure>
-                <div class="text">
-                    <span class="number">3</span>
-                    <span class="detail">
-                        dinh thự
-                        <br>
-                        mang tính biểu tượng
-                    </span>
-                </div>
-            </div>
+            <figure class="block3__right">
+                <img class="wow fadeIn" src="./assets/images/map.jpg" alt="swancity">
+            </figure>
         </div>
-    </div>
-</section>
-<section class="block5">
-    <div class="block5__container">
-        <div class="block5__slider">
-            <div class="block5__item">
-                <img class="image" src="./assets/images/block5_img.jpg" alt="hồ cảnh quanh">
-                <div class="title wow fadeIn">
-                    hồ cảnh quanh
-                    <div class="sub-title">
-                        lấy giá trị bền vững làm tiêu chí, lấy sự sáng tạo làm nền tảng trong tương lai.
-                    </div>
+    </section>
+    <section class="block4 tienich" id="tienich">
+        <div class="block4__container">
+            <div class="block4__img_mb">
+                <img src="./assets/images/block4_img_mb.jpg" alt="3 giá trị tạo nên những biểu tượng nghệ thuật">
+            </div>
+            <div class="block4__top">
+                <div class="block4__heading wow fadeInRight">
+                    <span class="txt-1">3 giá trị tạo nên</span>
+                    <span class="txt-2">những biểu tượng</span>
+                    <span class="txt-3">nghệ thuật</span>
+                </div>
+                <div class="btn-submit btn-discount ml-0" data-toggle="modal" data-target="#Popup">
+                    nhận chiết khấu
                 </div>
             </div>
-            <div class="block5__item">
-                <img class="image" src="./assets/images/block5_img.jpg" alt="hồ cảnh quanh">
-                <div class="title wow fadeIn">
-                    hồ cảnh quan
-                    <div class="sub-title">
-                        lấy giá trị bền vững làm tiêu chí, lấy sự sáng tạo làm nền tảng trong tương lai.
-                    </div>
-                </div>
-            </div>
-            <div class="block5__item">
-                <img class="image" src="./assets/images/block5_img.jpg" alt="hồ cảnh quanh">
-                <div class="title wow fadeIn">
-                    hồ cảnh quan
-                    <div class="sub-title">
-                        lấy giá trị bền vững làm tiêu chí, lấy sự sáng tạo làm nền tảng trong tương lai.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="block6 matbang" id="matbang">
-    <div class="block6__container">
-        <figure class="block6__left">
-            <img class=" wow fadeIn" src="./assets/images/mbtongthe.jpg" alt="swancity">
-        </figure>
-        <div class="block6__right">
-            <div class="block6__heading wow fadeInRight" data-wow-delay="0.1s">mặt bằng tổng thể</div>
-            <div class="block6__des wow fadeInRight" data-wow-delay="0.2s">
-                Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu,
-                lấy giá trị bền vững làm tiêu chí, lấy sự sáng tạo làm nền tảng. Các thiết kế biệt thự vừa đáp ứng được
-                nhu cầu của hiện tại, vừa linh hoạt đón đầu những thay đổi trong tương lai.
-            </div>
-        </div>
-    </div>
-</section>
-<section class="block7">
-    <div class="block7__container">
-        <div class="block7__title wow fadeInDown">
-            ĐĂNG KÝ TẠI ĐÂY
-            <br>
-            ĐỂ NHẬN TƯ VẤN VÀ BÁO GIÁ
-        </div>
-        <form method="POST">
-            <div class="block7__form form">
-                <div class="form__group wow fadeInLeft">
-                    <input
-                        class="form__control block7Name"
-                        name="name"
-                        type="text"
-                        placeholder="Họ và tên"
-                    >
-                </div>
-                <div class="form__group wow fadeInRight">
-                    <input
-                        class="form__control block7Email"
-                        name="email"
-                        type="text"
-                        placeholder="Email"
-                    >
-                </div>
-                <div class="form__group wow fadeInLeft">
-                    <input
-                        class="form__control block7Phone"
-                        name="phone"
-                        type="text"
-                        placeholder="Số điện thoại"
-                    >
-                </div>
-                <div class="form__group wow fadeInRight">
-                    <input
-                        class="form__control block7Note"
-                        name="note"
-                        type="text"
-                        placeholder="Ghi chú nhu cầu"
-                    >
-                </div>
-                <div class="block7__form-button form__button text-center w-100 wow fadeInDown">
-                    <button class="btn-submit submit-form" type="submit" disabled="disabled">
-                        Đăng ký
-                    </button>
-                </div>
-            </div>
-        </form>
-    </div>
-</section>
-<section class="block8 sanpham" id="sanpham">
-    <div class="block8__container">
-        <div class="block8__left">
-            <ul class="nav nav-tabs" role="tablist">
-                <li class="nav-item">
-                    <a
-                        class="nav-link active wow fadeInLeft"
-                        data-wow-delay="0.1s"
-                        data-toggle="tab"
-                        href="#tab1"
-                    >Supper villa</a>
-                </li>
-                <li class="nav-item">
-                    <a
-                        class="nav-link wow fadeInLeft"
-                        data-wow-delay="0.2s"
-                        data-toggle="tab"
-                        href="#tab2"
-                    >the VILLA h</a>
-                </li>
-                <li class="nav-item">
-                    <a
-                        class="nav-link wow fadeInLeft"
-                        data-wow-delay="0.3s"
-                        data-toggle="tab"
-                        href="#tab3"
-                    >the VILLA l</a>
-                </li>
-                <li class="nav-item">
-                    <a
-                        class="nav-link wow fadeInLeft"
-                        data-wow-delay="0.4s"
-                        data-toggle="tab"
-                        href="#tab4"
-                    >the mansion</a>
-                </li>
-            </ul>
-            <div class="block8__sliders wow fadeInUp">
-                <div class="block8__slider collapse show" data-slide="#tab1">
-                    <!-- 1 -->
-                    <figure class="item">
-                        <img src="./assets/images/slide1.jpg" alt="swancity">
+            <div class="block4__bottom">
+                <div class="block4__list-item wow fadeInUp">
+                    <figure class="img">
+                        <img src="./assets/images/step1.jpg" alt="vị trí chiến lượt <br> liền kề sân bay & khu công nghệ cao">
                     </figure>
-                    <figure class="item">
-                        <img src="./assets/images/slide2.jpg" alt="swancity">
-                    </figure>
-                    <figure class="item">
-                        <img src="./assets/images/slide1.jpg" alt="swancity">
-                    </figure>
-                    <figure class="item">
-                        <img src="./assets/images/slide1.jpg" alt="swancity">
-                    </figure>
-                </div>
-                <div class="block8__slider collapse" data-slide="#tab2">
-                    <!-- 2 -->
-                    <figure class="item">
-                        <img src="./assets/images/slide2.jpg" alt="swancity">
-                    </figure>
-                    <figure class="item">
-                        <img src="./assets/images/slide1.jpg" alt="swancity">
-                    </figure>
-                    <figure class="item">
-                        <img src="./assets/images/slide1.jpg" alt="swancity">
-                    </figure>
-                    <figure class="item">
-                        <img src="./assets/images/slide1.jpg" alt="swancity">
-                    </figure>
-                </div>
-                <div class="block8__slider collapse" data-slide="#tab3">
-                    <!-- 3 -->
-                    <figure class="item">
-                        <img src="./assets/images/slide1.jpg" alt="swancity">
-                    </figure>
-                    <figure class="item">
-                        <img src="./assets/images/slide2.jpg" alt="swancity">
-                    </figure>
-                    <figure class="item">
-                        <img src="./assets/images/slide1.jpg" alt="swancity">
-                    </figure>
-                    <figure class="item">
-                        <img src="./assets/images/slide1.jpg" alt="swancity">
-                    </figure>
-                </div>
-                <div class="block8__slider collapse" data-slide="#tab4">
-                    <!-- 4 -->
-                    <figure class="item">
-                        <img src="./assets/images/slide2.jpg" alt="swancity">
-                    </figure>
-                    <figure class="item">
-                        <img src="./assets/images/slide1.jpg" alt="swancity">
-                    </figure>
-                    <figure class="item">
-                        <img src="./assets/images/slide1.jpg" alt="swancity">
-                    </figure>
-                    <figure class="item">
-                        <img src="./assets/images/slide1.jpg" alt="swancity">
-                    </figure>
-                </div>
-            </div>
-        </div>
-        <div class="block8__right tab-content wow fadeIn">
-            <div class="tab-pane show active" id="tab1">
-                <img src="./assets/images/block8_img_bg.jpg" alt="swancity">
-            </div>
-            <div class="tab-pane" id="tab2">
-                <img src="./assets/images/slide2.jpg" alt="swancity">
-            </div>
-            <div class="tab-pane" id="tab3">
-                <img src="./assets/images/slide1.jpg" alt="swancity">
-            </div>
-            <div class="tab-pane" id="tab4">
-                <img src="./assets/images/block8_img_bg.jpg" alt="swancity">
-            </div>
-        </div>
-    </div>
-</section>
-<section class="block9 csbh" id="csbh">
-    <div class="block9__container">
-        <div class="big_heading wow fadeInLeft">
-            <div class="big_heading__top">
-                <span>chính sách</span>
-                <span>bán hàng</span>
-            </div>
-            <i>the icon</i>
-        </div>
-        <div class="block9__content">
-            <div class="block9__content--item wow fadeInLeft" data-wow-delay="0.1s">
-                <div class="title">
-                    <span class="no">01</span>
-                    <span class="percent">75%</span>
-                </div>
-                <div class="detail">
-                    Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền
-                    vững làm tiêu chí, lấy sự sáng tạo làm nền tảng. Các thiết kế biệt thự vừa đáp ứng được nhu cầu của
-                    hiện tại, vừa linh hoạt đón đầu những thay đổi trong tương lai.
-                </div>
-            </div>
-            <div class="block9__content--item wow fadeInLeft" data-wow-delay="0.3s">
-                <div class="title">
-                    <span class="no">02</span>
-                    <span class="percent">3%</span>
-                </div>
-                <div class="detail">
-                    Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền
-                    vững làm tiêu chí, lấy sự sáng tạo làm nền tảng. Các thiết kế biệt thự vừa đáp ứng được nhu cầu của
-                    hiện tại, vừa linh hoạt đón đầu những thay đổi trong tương lai.
-                </div>
-            </div>
-            <div class="block9__content--item wow fadeInLeft" data-wow-delay="0.5s">
-                <div class="title">
-                    <span class="no">03</span>
-                    <span class="percent">25%</span>
-                </div>
-                <div class="detail">
-                    Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền
-                    vững làm tiêu chí, lấy sự sáng tạo làm nền tảng. Các thiết kế biệt thự vừa đáp ứng được nhu cầu của
-                    hiện tại, vừa linh hoạt đón đầu những thay đổi trong tương lai.
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="block10 tintuc" id="tintuc">
-    <div class="block10__container">
-        <div class="block10__heading">
-            <img src="./assets/images/news_label.png" alt="tin tức">
-        </div>
-        <div class="block10__sliders">
-            <div class="block10__slider">
-                <figure class="item wow fadeInUp" data-wow-delay="0.1s">
-                    <span class="img" data-toggle="modal" data-target="#News">
-                        <img src="./assets/images/news1.jpg">
-                    </span>
-                    <span class="des">
-                        Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền vững làm tiêu chí,
-                    </span>
-                </figure>
-                <figure class="item wow fadeInUp" data-wow-delay="0.3s">
-                    <span class="img" data-toggle="modal" data-target="#News">
-                        <img src="./assets/images/news2.jpg">
-                    </span>
-                    <span class="des">
-                        Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền vững làm tiêu chí,
-                    </span>
-                </figure>
-                <figure class="item wow fadeInUp bigger" data-wow-delay="0.5s">
-                    <span class="img" data-toggle="modal" data-target="#News">
-                        <img src="./assets/images/news3.jpg">
-                    </span>
-                    <span class="des">
-                        Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền vững làm tiêu chí,
-                    </span>
-                </figure>
-            </div>
-            <div class="block10__slider">
-                <figure class="item">
-                    <span class="img" data-toggle="modal" data-target="#News">
-                        <img src="./assets/images/news1.jpg">
-                    </span>
-                    <span class="des">
-                        Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền vững làm tiêu chí,
-                    </span>
-                </figure>
-                <figure class="item">
-                    <span class="img" data-toggle="modal" data-target="#News">
-                        <img src="./assets/images/news2.jpg">
-                    </span>
-                    <span class="des">
-                        Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền vững làm tiêu chí,
-                    </span>
-                </figure>
-                <figure class="item bigger">
-                    <span class="img" data-toggle="modal" data-target="#News">
-                        <img src="./assets/images/news3.jpg">
-                    </span>
-                    <span class="des">
-                        Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền vững làm tiêu chí,
-                    </span>
-                </figure>
-            </div>
-            <div class="block10__slider">
-                <figure class="item">
-                    <span class="img" data-toggle="modal" data-target="#News">
-                        <img src="./assets/images/news3.jpg">
-                    </span>
-                    <span class="des">
-                        Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền vững làm tiêu chí,
-                    </span>
-                </figure>
-                <figure class="item">
-                    <span class="img" data-toggle="modal" data-target="#News">
-                        <img src="./assets/images/news2.jpg">
-                    </span>
-                    <span class="des">
-                        Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền vững làm tiêu chí,
-                    </span>
-                </figure>
-                <figure class="item bigger">
-                    <span class="img" data-toggle="modal" data-target="#News">
-                        <img src="./assets/images/news3.jpg">
-                    </span>
-                    <span class="des">
-                        Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền vững làm tiêu chí,
-                    </span>
-                </figure>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="block11">
-    <div class="block11__container">
-        <div class="block11__wrap block11__left">
-            <div class="block11__info">
-                <a href="#" class="block11__logo wow fadeInDown">
-                    <img src="./assets/images/logo_footer.png" alt="swancity">
-                </a>
-                <div class="block11__contact wow fadeInDown">
-                    <div class="name wow fadeIn">Phòng kinh doanh</div>
-                    <div class="address wow fadeIn" data-wow-delay="0.2s">
-                        <p>Vị trí dự án: Nhơn Trạch, Đồng Nai</p>
-                        <p>Chi nhánh TP.HCM</p>
-                        <p>
-                            87 Hàm Nghi
+                    <div class="text">
+                        <span class="number">1</span>
+                        <span class="detail">
+                            vị trí chiến lượt
                             <br>
-                            Phường Nguyễn Thái Bình
+                            liền kề sân bay &
                             <br>
-                            Quận 1
-                        </p>
-                        <p>(+084) 969 2222 68</p>
-                        <p>sale@swancity.com.vn</p>
+                            khu công nghệ cao
+                        </span>
+                    </div>
+                </div>
+                <div class="block4__list-item wow fadeInUp" data-wow-delay="0.1s">
+                    <figure class="img">
+                        <img src="./assets/images/step2.jpg" alt="cộng đồng triệu phú quốc tế">
+                    </figure>
+                    <div class="text">
+                        <span class="number">2</span>
+                        <span class="detail">
+                            cộng đồng
+                            <br>
+                            triệu phú quốc tế
+                        </span>
+                    </div>
+                </div>
+                <div class="block4__list-item wow fadeInUp" data-wow-delay="0.2s">
+                    <figure class="img">
+                        <img src="./assets/images/step3.jpg" alt="dinh thự mang tính biểu tượng">
+                    </figure>
+                    <div class="text">
+                        <span class="number">3</span>
+                        <span class="detail">
+                            dinh thự
+                            <br>
+                            mang tính biểu tượng
+                        </span>
                     </div>
                 </div>
             </div>
-            <div class="block11__logo-swancity wow fadeInDown">
-                <a href="#" class="text-center">
-                    <img src="./assets/images/logo_swancity.png" alt="swancity">
-                </a>
+        </div>
+    </section>
+    <section class="block5">
+        <div class="block5__container">
+            <div class="block5__slider">
+                <div class="block5__item">
+                    <img class="image" src="./assets/images/block5_img.jpg" alt="hồ cảnh quanh">
+                    <div class="title wow fadeIn">
+                        hồ cảnh quanh
+                        <div class="sub-title">
+                            lấy giá trị bền vững làm tiêu chí, lấy sự sáng tạo làm nền tảng trong tương lai.
+                        </div>
+                    </div>
+                </div>
+                <div class="block5__item">
+                    <img class="image" src="./assets/images/block5_img.jpg" alt="hồ cảnh quanh">
+                    <div class="title wow fadeIn">
+                        hồ cảnh quan
+                        <div class="sub-title">
+                            lấy giá trị bền vững làm tiêu chí, lấy sự sáng tạo làm nền tảng trong tương lai.
+                        </div>
+                    </div>
+                </div>
+                <div class="block5__item">
+                    <img class="image" src="./assets/images/block5_img.jpg" alt="hồ cảnh quanh">
+                    <div class="title wow fadeIn">
+                        hồ cảnh quan
+                        <div class="sub-title">
+                            lấy giá trị bền vững làm tiêu chí, lấy sự sáng tạo làm nền tảng trong tương lai.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="block11__wrap block11__right">
-            <div class="block11__right-title wow fadeInUp">
+    </section>
+    <section class="block6 matbang" id="matbang">
+        <div class="block6__container">
+            <figure class="block6__left">
+                <img class=" wow fadeIn" src="./assets/images/mbtongthe.jpg" alt="swancity">
+            </figure>
+            <div class="block6__right">
+                <div class="block6__heading wow fadeInRight" data-wow-delay="0.1s">mặt bằng tổng thể</div>
+                <div class="block6__des wow fadeInRight" data-wow-delay="0.2s">
+                    Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu,
+                    lấy giá trị bền vững làm tiêu chí, lấy sự sáng tạo làm nền tảng. Các thiết kế biệt thự vừa đáp ứng được
+                    nhu cầu của hiện tại, vừa linh hoạt đón đầu những thay đổi trong tương lai.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="block7">
+        <div class="block7__container">
+            <div class="block7__title wow fadeInDown">
                 ĐĂNG KÝ TẠI ĐÂY
                 <br>
                 ĐỂ NHẬN TƯ VẤN VÀ BÁO GIÁ
             </div>
             <form method="POST">
-                <div class="block11__form form">
-                    <div class="form__group wow fadeInDown" data-wow-delay="0.1s">
+                <div class="block7__form form">
+                    <div class="form__group wow fadeInLeft">
                         <input
-                            class="form__control block11Name"
-                            name="name"
-                            type="text"
-                            placeholder="Họ và tên"
+                        class="form__control block7Name"
+                        name="name"
+                        type="text"
+                        placeholder="Họ và tên"
                         >
                     </div>
-                    <div class="form__group wow fadeInDown" data-wow-delay="0.2s">
+                    <div class="form__group wow fadeInRight">
                         <input
-                            class="form__control block11Email"
-                            name="email"
-                            type="text"
-                            placeholder="Email"
+                        class="form__control block7Email"
+                        name="email"
+                        type="text"
+                        placeholder="Email"
                         >
                     </div>
-                    <div class="form__group wow fadeInDown" data-wow-delay="0.3s">
+                    <div class="form__group wow fadeInLeft">
                         <input
-                            class="form__control block11Phone"
-                            name="phone"
-                            type="text"
-                            placeholder="Số điện thoại"
+                        class="form__control block7Phone"
+                        name="phone"
+                        type="text"
+                        placeholder="Số điện thoại"
                         >
                     </div>
-                    <div class="form__group wow fadeInDown" data-wow-delay="0.4s">
+                    <div class="form__group wow fadeInRight">
                         <input
-                            class="form__control block11Note"
-                            name="note"
-                            type="text"
-                            placeholder="Ghi chú nhu cầu"
+                        class="form__control block7Note"
+                        name="note"
+                        type="text"
+                        placeholder="Ghi chú nhu cầu"
                         >
                     </div>
-                    <div class="block11__form-button form__button text-center wow fadeInDown" data-wow-delay="0.5s">
+                    <div class="block7__form-button form__button text-center w-100 wow fadeInDown">
                         <button class="btn-submit submit-form" type="submit" disabled="disabled">
-                            Đăng ký
+                        Đăng ký
                         </button>
                     </div>
                 </div>
             </form>
         </div>
-    </div>
-</section>
+    </section>
+    <section class="block8 sanpham" id="sanpham">
+        <div class="block8__container">
+            <div class="block8__left">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a
+                            class="nav-link active wow fadeInLeft"
+                            data-wow-delay="0.1s"
+                            data-toggle="tab"
+                            href="#tab1"
+                        >Supper villa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link wow fadeInLeft"
+                            data-wow-delay="0.2s"
+                            data-toggle="tab"
+                            href="#tab2"
+                        >the VILLA h</a>
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link wow fadeInLeft"
+                            data-wow-delay="0.3s"
+                            data-toggle="tab"
+                            href="#tab3"
+                        >the VILLA l</a>
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link wow fadeInLeft"
+                            data-wow-delay="0.4s"
+                            data-toggle="tab"
+                            href="#tab4"
+                        >the mansion</a>
+                    </li>
+                </ul>
+
+                {# show on mobile  #}
+                <div class="block8__right tab-content wow fadeIn d-block d-md-none mb-3">
+                    <div class="tab-pane show active" id="tab1">
+                        <img src="./assets/images/block8_img_bg.jpg" alt="swancity">
+                    </div>
+                    <div class="tab-pane" id="tab2">
+                        <img src="./assets/images/slide2.jpg" alt="swancity">
+                    </div>
+                    <div class="tab-pane" id="tab3">
+                        <img src="./assets/images/slide1.jpg" alt="swancity">
+                    </div>
+                    <div class="tab-pane" id="tab4">
+                        <img src="./assets/images/block8_img_bg.jpg" alt="swancity">
+                    </div>
+                </div>
+
+                <div class="block8__sliders wow fadeInUp">
+                    <div class="block8__slider collapse show" data-slide="#tab1">
+                        <!-- 1 -->
+                        <figure class="item">
+                            <a href="./assets/images/block8_img_bg.jpg" class="fancybox" data-fancybox="group1">
+                                <img src="./assets/images/block8_img_bg.jpg" alt="swancity">
+                            </a>
+                        </figure>
+                        <figure class="item">
+                            <a href="./assets/images/slide2.jpg" class="fancybox" data-fancybox="group1">
+                                <img src="./assets/images/slide2.jpg" alt="swancity">
+                            </a>
+                        </figure>
+                        <figure class="item">
+                            <a href="./assets/images/slide1.jpg" class="fancybox" data-fancybox="group1">
+                                <img src="./assets/images/slide1.jpg" alt="swancity">
+                            </a>
+                        </figure>
+                        <figure class="item">
+                            <a href="./assets/images/slide1.jpg" class="fancybox" data-fancybox="group1">
+                                <img src="./assets/images/slide1.jpg" alt="swancity">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="block8__slider collapse" data-slide="#tab2">
+                        <!-- 2 -->
+                        <figure class="item">
+                            <a href="./assets/images/slide2.jpg" class="fancybox" data-fancybox="group2">
+                                <img src="./assets/images/slide2.jpg" alt="swancity">
+                            </a>
+                        </figure>
+                        <figure class="item">
+                            <a href="./assets/images/slide1.jpg" class="fancybox" data-fancybox="group2">
+                                <img src="./assets/images/slide1.jpg" alt="swancity">
+                            </a>
+                        </figure>
+                        <figure class="item">
+                            <a href="./assets/images/slide2.jpg" class="fancybox" data-fancybox="group2">
+                                <img src="./assets/images/slide2.jpg" alt="swancity">
+                            </a>
+                        </figure>
+                        <figure class="item">
+                            <a href="./assets/images/slide1.jpg" class="fancybox" data-fancybox="group2">
+                                <img src="./assets/images/slide1.jpg" alt="swancity">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="block8__slider collapse" data-slide="#tab3">
+                        <!-- 3 -->
+                        <figure class="item">
+                            <a href="./assets/images/slide1.jpg" class="fancybox" data-fancybox="group3">
+                                <img src="./assets/images/slide1.jpg" alt="swancity">
+                            </a>
+                        </figure>
+                        <figure class="item">
+                            <a href="./assets/images/slide2.jpg" class="fancybox" data-fancybox="group3">
+                                <img src="./assets/images/slide2.jpg" alt="swancity">
+                            </a>
+                        </figure>
+                        <figure class="item">
+                            <a href="./assets/images/slide1.jpg" class="fancybox" data-fancybox="group3">
+                                <img src="./assets/images/slide1.jpg" alt="swancity">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="block8__slider collapse" data-slide="#tab4">
+                        <!-- 4 -->
+                        <figure class="item">
+                            <a href="./assets/images/slide1.jpg" class="fancybox" data-fancybox="group4">
+                                <img src="./assets/images/slide1.jpg" alt="swancity">
+                            </a>
+                        </figure>
+                        <figure class="item">
+                            <a href="./assets/images/slide1.jpg" class="fancybox" data-fancybox="group4">
+                                <img src="./assets/images/slide1.jpg" alt="swancity">
+                            </a>
+                        </figure>
+                        <figure class="item">
+                            <a href="./assets/images/slide1.jpg" class="fancybox" data-fancybox="group4">
+                                <img src="./assets/images/slide1.jpg" alt="swancity">
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            {# hide on mobile  #}
+            <div class="block8__right tab-content wow fadeIn d-none d-md-block">
+                <div class="tab-pane show active" id="tab1">
+                    <img src="./assets/images/block8_img_bg.jpg" alt="swancity">
+                </div>
+                <div class="tab-pane" id="tab2">
+                    <img src="./assets/images/slide2.jpg" alt="swancity">
+                </div>
+                <div class="tab-pane" id="tab3">
+                    <img src="./assets/images/slide1.jpg" alt="swancity">
+                </div>
+                <div class="tab-pane" id="tab4">
+                    <img src="./assets/images/block8_img_bg.jpg" alt="swancity">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="block9 csbh" id="csbh">
+        <div class="block9__container">
+            <div class="big_heading wow fadeInLeft">
+                <div class="big_heading__top">
+                    <span>chính sách</span>
+                    <span>bán hàng</span>
+                </div>
+                <i>the icon</i>
+            </div>
+            <div class="block9__content">
+                <div class="block9__content--item wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="title">
+                        <span class="no">01</span>
+                        <span class="percent">75%</span>
+                    </div>
+                    <div class="detail">
+                        Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền
+                        vững làm tiêu chí, lấy sự sáng tạo làm nền tảng. Các thiết kế biệt thự vừa đáp ứng được nhu cầu của
+                        hiện tại, vừa linh hoạt đón đầu những thay đổi trong tương lai.
+                    </div>
+                </div>
+                <div class="block9__content--item wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="title">
+                        <span class="no">02</span>
+                        <span class="percent">3%</span>
+                    </div>
+                    <div class="detail">
+                        Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền
+                        vững làm tiêu chí, lấy sự sáng tạo làm nền tảng. Các thiết kế biệt thự vừa đáp ứng được nhu cầu của
+                        hiện tại, vừa linh hoạt đón đầu những thay đổi trong tương lai.
+                    </div>
+                </div>
+                <div class="block9__content--item wow fadeInLeft" data-wow-delay="0.5s">
+                    <div class="title">
+                        <span class="no">03</span>
+                        <span class="percent">25%</span>
+                    </div>
+                    <div class="detail">
+                        Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền
+                        vững làm tiêu chí, lấy sự sáng tạo làm nền tảng. Các thiết kế biệt thự vừa đáp ứng được nhu cầu của
+                        hiện tại, vừa linh hoạt đón đầu những thay đổi trong tương lai.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="block10 tintuc" id="tintuc">
+        <div class="block10__container">
+            <div class="block10__heading">
+                <img src="./assets/images/news_label.png" alt="tin tức">
+            </div>
+            <div class="block10__sliders">
+                <div class="block10__slider">
+                    <figure class="item wow fadeInUp" data-wow-delay="0.1s">
+                        <span class="img" data-toggle="modal" data-target="#News">
+                            <img src="./assets/images/news3.jpg">
+                        </span>
+                        <span class="des">
+                            Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền vững làm tiêu chí,
+                        </span>
+                    </figure>
+                    <figure class="item wow fadeInUp" data-wow-delay="0.3s">
+                        <span class="img" data-toggle="modal" data-target="#News">
+                            <img src="./assets/images/news2.jpg">
+                        </span>
+                        <span class="des">
+                            Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền vững làm tiêu chí,
+                        </span>
+                    </figure>
+                    <figure class="item wow fadeInUp bigger" data-wow-delay="0.5s">
+                        <span class="img" data-toggle="modal" data-target="#News">
+                            <img src="./assets/images/news3.jpg">
+                        </span>
+                        <span class="des">
+                            Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền vững làm tiêu chí,
+                        </span>
+                    </figure>
+                </div>
+                <div class="block10__slider">
+                    <figure class="item">
+                        <span class="img" data-toggle="modal" data-target="#News">
+                            <img src="./assets/images/news1.jpg">
+                        </span>
+                        <span class="des">
+                            Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền vững làm tiêu chí,
+                        </span>
+                    </figure>
+                    <figure class="item">
+                        <span class="img" data-toggle="modal" data-target="#News">
+                            <img src="./assets/images/news2.jpg">
+                        </span>
+                        <span class="des">
+                            Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền vững làm tiêu chí,
+                        </span>
+                    </figure>
+                    <figure class="item bigger">
+                        <span class="img" data-toggle="modal" data-target="#News">
+                            <img src="./assets/images/news3.jpg">
+                        </span>
+                        <span class="des">
+                            Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền vững làm tiêu chí,
+                        </span>
+                    </figure>
+                </div>
+                <div class="block10__slider">
+                    <figure class="item">
+                        <span class="img" data-toggle="modal" data-target="#News">
+                            <img src="./assets/images/news3.jpg">
+                        </span>
+                        <span class="des">
+                            Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền vững làm tiêu chí,
+                        </span>
+                    </figure>
+                    <figure class="item">
+                        <span class="img" data-toggle="modal" data-target="#News">
+                            <img src="./assets/images/news2.jpg">
+                        </span>
+                        <span class="des">
+                            Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền vững làm tiêu chí,
+                        </span>
+                    </figure>
+                    <figure class="item bigger">
+                        <span class="img" data-toggle="modal" data-target="#News">
+                            <img src="./assets/images/news3.jpg">
+                        </span>
+                        <span class="des">
+                            Biệt thự SwanPark theo lối kiến trúc châu Âu hiện đại lấy công năng làm mục tiêu, lấy giá trị bền vững làm tiêu chí,
+                        </span>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="block11">
+        <div class="block11__container">
+            <div class="block11__wrap block11__left">
+                <div class="block11__info">
+                    <a href="#" class="block11__logo wow fadeInDown">
+                        <img src="./assets/images/logo_footer.png" alt="swancity">
+                    </a>
+                    <div class="block11__contact wow fadeInDown">
+                        <div class="name wow fadeIn">Phòng kinh doanh</div>
+                        <div class="address wow fadeIn" data-wow-delay="0.2s">
+                            <p>Vị trí dự án: Nhơn Trạch, Đồng Nai</p>
+                            <p>Chi nhánh TP.HCM</p>
+                            <p>
+                                87 Hàm Nghi
+                                <br>
+                                Phường Nguyễn Thái Bình
+                                <br>
+                                Quận 1
+                            </p>
+                            <p>(+084) 969 2222 68</p>
+                            <p>sale@swancity.com.vn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block11__logo-swancity wow fadeInDown">
+                    <a href="#" class="text-center">
+                        <img src="./assets/images/logo_swancity.png" alt="swancity">
+                    </a>
+                </div>
+            </div>
+            <div class="block11__wrap block11__right">
+                <div class="block11__right-title wow fadeInUp">
+                    ĐĂNG KÝ TẠI ĐÂY
+                    <br>
+                    ĐỂ NHẬN TƯ VẤN VÀ BÁO GIÁ
+                </div>
+                <form method="POST">
+                    <div class="block11__form form">
+                        <div class="form__group wow fadeInDown" data-wow-delay="0.1s">
+                            <input
+                            class="form__control block11Name"
+                            name="name"
+                            type="text"
+                            placeholder="Họ và tên"
+                            >
+                        </div>
+                        <div class="form__group wow fadeInDown" data-wow-delay="0.2s">
+                            <input
+                            class="form__control block11Email"
+                            name="email"
+                            type="text"
+                            placeholder="Email"
+                            >
+                        </div>
+                        <div class="form__group wow fadeInDown" data-wow-delay="0.3s">
+                            <input
+                            class="form__control block11Phone"
+                            name="phone"
+                            type="text"
+                            placeholder="Số điện thoại"
+                            >
+                        </div>
+                        <div class="form__group wow fadeInDown" data-wow-delay="0.4s">
+                            <input
+                            class="form__control block11Note"
+                            name="note"
+                            type="text"
+                            placeholder="Ghi chú nhu cầu"
+                            >
+                        </div>
+                        <div class="block11__form-button form__button text-center wow fadeInDown" data-wow-delay="0.5s">
+                            <button class="btn-submit submit-form" type="submit" disabled="disabled">
+                            Đăng ký
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 {% endblock %}

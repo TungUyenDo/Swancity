@@ -696,6 +696,7 @@
     .slick-dots {
         position: static;
         margin-top: 1.75vw;
+        margin-bottom: 1vw;
         text-align: right;
         @media (max-width: 767px) {
             margin-top: 3.75vw;
@@ -744,6 +745,18 @@
     /* the parent */
     .slick-list {
         margin: 0 -0.365vw;
+        display: flex;
+    }
+
+    .slick-track {
+        @include flexbox;
+        @include align-items(center);
+
+        .slick-slide {
+            background-color: #191a1c;
+            @include flexbox;
+            @include align-items(center);
+        }
     }
 
     /* bootstrap hack: fix content width inside hidden tabs */
@@ -936,6 +949,9 @@
         .item {
             margin: 1.042vw;
             width: 22.656vw;
+            @include flexbox;
+            @include flex-direction(column);
+            
             @media (max-width: 767px) {
                 width: 47%;
                 margin: 0 1.5%;
@@ -944,7 +960,15 @@
                 overflow: hidden;
                 position: relative;
                 cursor: pointer;
-                display: block;
+                // display: block;
+                height: 100%;
+                background-color: #191a1c;
+                @include flexbox;
+                @include align-items(center);
+                @include align-items(center);
+                @media (max-width: 767px) {
+                    height: 50vw;
+                }
                 &::before {
                     position: absolute;
                     content: "";
@@ -978,6 +1002,7 @@
                 width: 100%;
                 display: block;
                 line-height: normal;
+
                 @media (max-width: 767px) {
                     font-size: 2.7vw;
                     margin-top: 2.563vw;

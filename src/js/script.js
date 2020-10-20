@@ -22,9 +22,14 @@ var MainScript = (function () {
         self.Menu();
         self.OpenMenu();
         self.CloseMenu();
+        self.lightbox();
     }
     var _resize = function () { }
 
+    this.lightbox = function(){
+        $('.fancybox').fancybox();
+    }
+    
     this.Block8Tabs = function () {
         $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
             let href = $(this).attr('href');
@@ -164,7 +169,7 @@ var MainScript = (function () {
                 $(this).addClass('active')
             }
 
-            if($(this).attr('link') != ''){
+            if ($(this).attr('link') != '') {
                 goToByScroll($(this).attr('link'));
             }
 
@@ -178,12 +183,12 @@ var MainScript = (function () {
     }
 
     this.OpenMenu = function () {
-        $('.menu').click(function () {
-            if ($('.menu__text_toggle').hasClass('active')) {
-                $('.menu__text_toggle').removeClass('active')
+        $('.menu__text_toggle').click(function () {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active')
                 $('.menu__absolute').removeClass('active')
             } else {
-                $('.menu__text_toggle').addClass('active')
+                $(this).addClass('active')
                 $('.menu__absolute').addClass('active')
             }
         })
@@ -305,3 +310,4 @@ $(window).on('scroll', function () {
         }
     });
 });
+
