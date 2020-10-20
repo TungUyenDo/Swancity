@@ -26,16 +26,23 @@ var MainScript = (function () {
     }
     var _resize = function () { }
 
-    this.lightbox = function(){
+    this.lightbox = function () {
         $('.fancybox').fancybox();
     }
-    
+
     this.Block8Tabs = function () {
         $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
             let href = $(this).attr('href');
             console.log(href);
             $('.block8__slider').removeClass('show')
             $('.block8__slider[data-slide="' + href + '"]').addClass('show')
+
+            let id = href.split('#')[1];
+            console.log('id', id);
+
+            $('.block8__left .tab-pane').removeClass('show active')
+            $('.block8__left .tab-pane[id="mb_' + id + '"]').addClass('show active')
+
         })
     }
 
