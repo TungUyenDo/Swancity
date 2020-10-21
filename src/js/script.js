@@ -81,7 +81,8 @@ var MainScript = (function () {
             dots: true,
             autoplay: false,
             autoplaySpeed: 3000,
-            slidesToShow: 2
+            slidesToShow: 2,
+            infinite:false
         });
     }
 
@@ -317,4 +318,3 @@ $(window).on('scroll', function () {
         }
     });
 });
-

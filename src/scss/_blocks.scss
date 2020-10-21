@@ -738,8 +738,23 @@
 
     /* the slides */
     .slick-slide {
+        height: 16.406vw;
         margin: 0 0.365vw;
         cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        @media (max-width: 767px) {
+            width: 100%;
+            height: 45vw;
+        }
+        img{
+            width: 170%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            @include transform(translate(-50%,-50%));
+            transition: transform 0.2s ease-in-out;
+        }
     }
 
     /* the parent */
@@ -775,7 +790,18 @@
     }
 
     /* bootstrap hack end */
+
+
+
 }
+
+.fancybox-slide--image .fancybox-content {
+    animation-timing-function:ease !important;
+}
+
+// .fancybox-slide--image .fancybox-content{
+//     transform: none !important;
+// }
 
 .block9 {
     padding-top: 6vw;
@@ -951,7 +977,7 @@
             width: 22.656vw;
             @include flexbox;
             @include flex-direction(column);
-            
+
             @media (max-width: 767px) {
                 width: 47%;
                 margin: 0 1.5%;
@@ -961,7 +987,7 @@
                 position: relative;
                 cursor: pointer;
                 // display: block;
-                height: 100%;
+                height: 86%;
                 background-color: #191a1c;
                 @include flexbox;
                 @include align-items(center);
