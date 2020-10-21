@@ -4,18 +4,20 @@
     width: 100%;
     background: url(../assets/images/block1_bg.jpg);
     background-size: 100% 100%;
+
     @media (max-width: 767px) {
         background-image: none;
         height: auto;
     }
-    &__container {
-    }
+
+    &__container {}
 
     &__heading {
         position: absolute;
         width: 33.438vw;
         top: 9.375vw;
         left: 40.469vw;
+
         @media (max-width: 767px) {
             top: 44vw;
             left: 25vw;
@@ -28,9 +30,11 @@
         @include flex-direction(column);
         @include align-items(center);
         margin-bottom: 2.656vw;
+
         .logo_1 {
             width: 1.563vw;
             margin-bottom: 0.625vw;
+
             @media (max-width: 767px) {
                 width: 5vw;
                 margin-bottom: 1.2vw;
@@ -39,6 +43,7 @@
 
         .logo_2 {
             width: 5.469vw;
+
             @media (max-width: 767px) {
                 width: 18.469vw;
             }
@@ -50,6 +55,7 @@
         left: 9.063vw;
         top: 3.646vw;
         width: 23.698vw;
+
         @media (max-width: 767px) {
             position: static;
             width: 100%;
@@ -58,8 +64,10 @@
             background: radial-gradient(circle, #ffffff70, #000 100%);
         }
     }
+
     &__img_mb {
         display: none;
+
         @media (max-width: 767px) {
             display: block;
         }
@@ -71,6 +79,7 @@
 
     &__form-button {
         margin-top: 1.042vw;
+
         @media (max-width: 767px) {
             margin-top: 2.042vw;
         }
@@ -84,6 +93,7 @@
         margin-bottom: 1.15vw;
         font-size: 1.146vw;
         line-height: normal;
+
         @media (max-width: 767px) {
             margin-bottom: 3.15vw;
             font-size: 4.146vw;
@@ -97,6 +107,7 @@
         color: #fff;
         margin-bottom: 2.604vw;
         line-height: normal;
+
         @media (max-width: 767px) {
             font-size: 3vw;
             margin-bottom: 5vw;
@@ -109,6 +120,7 @@
         margin-left: auto;
         margin-right: auto;
         display: block;
+
         @media (max-width: 767px) {
             width: 30vw;
         }
@@ -133,6 +145,7 @@
         top: 22.563vw;
         left: 50%;
         @include transform(translateX(-50%));
+
         @media (max-width: 767px) {
             position: static;
             transform: none;
@@ -152,6 +165,7 @@
             font-family: $UTMGod_sWordR;
             font-size: 3.125vw;
             line-height: 2.917vw;
+
             @media (max-width: 767px) {
                 font-size: 8.125vw;
                 line-height: 8.917vw;
@@ -161,6 +175,7 @@
         .txt-2 {
             font-size: 1.875vw;
             font-family: $UTMGod_sWordR;
+
             @media (max-width: 767px) {
                 font-size: 4.875vw;
                 margin-top: 1vw;
@@ -170,6 +185,7 @@
 
     .btn-submit {
         margin-top: 1.25vw;
+
         @media (max-width: 767px) {
             margin-top: 2vw;
         }
@@ -179,6 +195,7 @@
 .block3 {
     &__container {
         @include flexbox;
+
         @media (max-width: 767px) {
             @include flex-direction(column);
             padding: 0 8%;
@@ -192,6 +209,7 @@
         line-height: 3.021vw;
         margin-bottom: 2.344vw;
         text-align: right;
+
         @media (max-width: 767px) {
             text-align: center;
             font-size: 5.604vw;
@@ -206,6 +224,7 @@
         font-size: 0.938vw;
         line-height: normal;
         font-family: $SVN-Gotham-Book;
+
         @media (max-width: 767px) {
             width: 100%;
             font-size: 3vw;
@@ -219,6 +238,7 @@
         width: 32.292vw;
         padding-right: 1.979vw;
         padding-top: 8.594vw;
+
         @media (max-width: 767px) {
             width: 100%;
         }
@@ -235,12 +255,15 @@
     width: 100%;
     background: url(../assets/images/block4_bg.jpg);
     background-size: 100% 100%;
+
     @media (max-width: 767px) {
         height: auto;
         background-image: none;
     }
+
     &__img_mb {
         display: none;
+
         @media (max-width: 767px) {
             display: block;
         }
@@ -248,6 +271,7 @@
 
     &__container {
         padding-top: 13.021vw;
+
         @media (max-width: 767px) {
             margin-bottom: 8vw;
         }
@@ -266,6 +290,7 @@
 
         .txt-1 {
             font-size: 1.979vw;
+
             @media (max-width: 767px) {
                 font-size: 4.979vw;
             }
@@ -275,6 +300,7 @@
             font-size: 2.865vw;
             line-height: 2.865vw;
             margin-top: 0.521vw;
+
             @media (max-width: 767px) {
                 font-size: 6.865vw;
                 line-height: 7.865vw;
@@ -285,6 +311,7 @@
         .txt-3 {
             font-size: 4.531vw;
             line-height: normal;
+
             @media (max-width: 767px) {
                 font-size: 6.531vw;
             }
@@ -293,6 +320,7 @@
 
     &__top {
         margin-left: 54.948vw;
+
         @media (max-width: 767px) {
             margin-left: 8%;
         }
@@ -304,6 +332,7 @@
         margin-right: auto;
         width: calc(100% - 8.333vw);
         margin-top: 6.667vw;
+
         @media (max-width: 767px) {
             @include flex-direction(column);
             width: calc(100% - 16%);
@@ -320,19 +349,20 @@
 
         &:nth-child(2) {
             margin: 0 1.406vw;
+
             @media (max-width: 767px) {
                 margin-bottom: 6vw;
             }
         }
 
-        .img {
-        }
+        .img {}
 
         .text {
             @include flexbox;
             color: #fff;
             padding-left: 1.979vw;
             margin-top: 1.563vw;
+
             @media (max-width: 767px) {
                 margin-top: 3.563vw;
             }
@@ -342,9 +372,10 @@
             font-family: $vanitas;
             font-size: 8.333vw;
             line-height: 7.292vw;
+
             @media (max-width: 767px) {
                 font-size: 16.333vw;
-                line-height: 10.292vw;
+                line-height: 13.333vw;
             }
         }
 
@@ -352,12 +383,15 @@
             font-family: $UTMGod_sWordR;
             text-transform: uppercase;
             font-size: 1.615vw;
-            line-height: 1.927vw;
+            line-height: 2.1vw;
             margin-top: 1.042vw;
             padding-left: 0.26vw;
+            @include flexbox;
+            @include align-items(flex-end);
+
             @media (max-width: 767px) {
                 font-size: 3.615vw;
-                line-height: 4vw;
+                line-height: 4.6vw;
                 margin-top: 0;
                 padding-left: 2.26vw;
             }
@@ -376,6 +410,7 @@
     @media (max-width: 767px) {
         height: 75vw;
     }
+
     &__container {
         width: calc(100% - 150px);
         margin: 0 auto;
@@ -385,8 +420,7 @@
         }
     }
 
-    &__slider {
-    }
+    &__slider {}
 
     &__item {
         position: relative;
@@ -403,6 +437,7 @@
             bottom: 3.385vw;
             font-size: 1.042vw;
             line-height: normal;
+
             @media (max-width: 767px) {
                 font-size: 3.042vw;
                 position: static;
@@ -416,17 +451,18 @@
             text-transform: none;
             font-family: $SVN-Gotham-Book;
             font-size: 0.938vw;
+
             @media (max-width: 767px) {
                 font-size: 2.938vw;
             }
         }
 
-        .image {
-        }
+        .image {}
     }
 
     .slick-dots {
         bottom: 0;
+
         @media (max-width: 767px) {
             margin-top: 5vw;
             position: static;
@@ -436,6 +472,7 @@
             margin: 0 0.573vw;
             width: 1.042vw;
             height: 1.042vw;
+
             @media (max-width: 767px) {
                 width: 2.042vw;
                 height: 2.042vw;
@@ -470,6 +507,7 @@
     width: 100%;
     padding-top: 3.385vw;
     padding-bottom: 10.156vw;
+
     @media (max-width: 767px) {
         padding-top: 5.385vw;
         padding-bottom: 14.156vw;
@@ -488,6 +526,7 @@
 
     &__container {
         @include flexbox;
+
         @media (max-width: 767px) {
             @include flex-direction(column);
             width: 84%;
@@ -502,6 +541,7 @@
         font-size: 2.604vw;
         line-height: 3.021vw;
         margin-bottom: 1.406vw;
+
         @media (max-width: 767px) {
             font-size: 5.604vw;
             line-height: 7.021vw;
@@ -513,6 +553,7 @@
         font-size: 0.938vw;
         line-height: normal;
         font-family: $SVN-Gotham-Book;
+
         @media (max-width: 767px) {
             width: 100%;
             font-size: 3vw;
@@ -528,6 +569,7 @@
         color: #fff;
         width: 32.292vw;
         padding-top: 11.979vw;
+
         @media (max-width: 767px) {
             width: 100%;
             padding-top: 5vw;
@@ -553,6 +595,7 @@
         width: 61.823vw;
         margin-left: auto;
         margin-right: auto;
+
         @media (max-width: 767px) {
             width: 84%;
         }
@@ -565,6 +608,7 @@
         font-family: $SVN-Gotham;
         font-size: 1.146vw;
         line-height: normal;
+
         @media (max-width: 767px) {
             font-size: 4.146vw;
             margin-bottom: 3vw;
@@ -575,12 +619,15 @@
         @include flexbox;
         @include flex-wrap(wrap);
         @include justify-content(space-between);
+
         @media (max-width: 767px) {
             @include flex-direction(column);
         }
     }
+
     &__form-button {
         margin-top: 1.823vw;
+
         @media (max-width: 767px) {
             margin-top: 2.5vw;
         }
@@ -588,6 +635,7 @@
 
     .form__group {
         width: calc(50% - 7px);
+
         @media (max-width: 767px) {
             width: 100%;
         }
@@ -598,11 +646,14 @@
     background-color: #000;
     padding: 6.771vw 4.01vw 8.854vw 9.74vw;
     padding: 65px 4.01vw 8.854vw 9.74vw;
+
     @media (max-width: 767px) {
         padding: 8vw 0;
     }
+
     &__container {
         @include flexbox;
+
         @media (max-width: 767px) {
             @include flex-direction(column);
             width: 84%;
@@ -613,17 +664,18 @@
 
     &__left {
         margin-right: 3.438vw;
+
         @media (max-width: 767px) {
             margin: 0;
         }
     }
 
-    &__right {
-    }
+    &__right {}
 
     &__slider {
         width: 28.646vw;
         color: #fff;
+
         @media (max-width: 767px) {
             width: 100%;
         }
@@ -637,6 +689,7 @@
         border-bottom: none;
         width: 18.75vw;
         margin-left: auto;
+
         @media (max-width: 767px) {
             width: 100%;
             margin-left: 0;
@@ -664,6 +717,7 @@
         padding-right: 0;
         margin: 0.052vw 0;
         font-size: 2.083vw;
+
         @media (max-width: 767px) {
             text-align: center;
             padding-left: 0;
@@ -686,6 +740,7 @@
                 background-color: #707070;
                 left: 100%;
                 top: 0;
+
                 @media (max-width: 767px) {
                     display: none;
                 }
@@ -698,6 +753,7 @@
         margin-top: 1.75vw;
         margin-bottom: 1vw;
         text-align: right;
+
         @media (max-width: 767px) {
             margin-top: 3.75vw;
             margin-bottom: 3vw;
@@ -719,6 +775,7 @@
                 height: 100%;
                 background-color: #373737;
                 border-radius: 50%;
+
                 @media (max-width: 767px) {
                     padding: 0;
                 }
@@ -743,16 +800,18 @@
         cursor: pointer;
         overflow: hidden;
         position: relative;
+
         @media (max-width: 767px) {
             width: 100%;
             height: 45vw;
         }
-        img{
+
+        img {
             width: 170%;
             position: absolute;
             left: 50%;
             top: 50%;
-            @include transform(translate(-50%,-50%));
+            @include transform(translate(-50%, -50%));
             transition: transform 0.2s ease-in-out;
         }
     }
@@ -775,7 +834,7 @@
     }
 
     /* bootstrap hack: fix content width inside hidden tabs */
-    .block8__sliders > .block8__slider {
+    .block8__sliders>.block8__slider {
         display: block;
         /* undo display:none          */
         height: 0;
@@ -784,7 +843,7 @@
         /* no-overflow                */
     }
 
-    .block8__sliders > .show {
+    .block8__sliders>.show {
         height: auto;
         /* let the content decide it  */
     }
@@ -796,7 +855,7 @@
 }
 
 .fancybox-slide--image .fancybox-content {
-    animation-timing-function:ease !important;
+    animation-timing-function: ease !important;
 }
 
 // .fancybox-slide--image .fancybox-content{
@@ -846,12 +905,14 @@
             font-size: 2.604vw;
             text-transform: uppercase;
             text-align: left;
+
             @media (max-width: 767px) {
                 font-size: 6.604vw;
             }
 
             &:nth-child(2) {
                 padding-left: 5.729vw;
+
                 @media (max-width: 767px) {
                     padding-left: 7vw;
                 }
@@ -951,27 +1012,33 @@
         width: 88.698vw;
         margin-left: auto;
         margin-right: auto;
+
         @media (max-width: 767px) {
             width: 84%;
         }
     }
+
     &__heading {
         width: 33.594vw;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: -0.625vw;
+
         @media (max-width: 767px) {
             width: 48.594vw;
             margin-bottom: 0;
         }
     }
+
     &__slider {
         display: flex !important;
         margin: 0 -1.042vw;
         cursor: pointer;
+
         @media (max-width: 767px) {
             @include flex-wrap(wrap);
         }
+
         .item {
             margin: 1.042vw;
             width: 22.656vw;
@@ -982,6 +1049,7 @@
                 width: 47%;
                 margin: 0 1.5%;
             }
+
             .img {
                 overflow: hidden;
                 position: relative;
@@ -992,9 +1060,11 @@
                 @include flexbox;
                 @include align-items(center);
                 @include align-items(center);
+
                 @media (max-width: 767px) {
                     height: 50vw;
                 }
+
                 &::before {
                     position: absolute;
                     content: "";
@@ -1013,13 +1083,16 @@
                     }
                 }
             }
+
             &.bigger {
                 width: 39.583vw;
+
                 @media (max-width: 767px) {
                     width: 100%;
                     margin-top: 4vw;
                 }
             }
+
             .des {
                 font-family: $SVN-Gotham-Book;
                 color: #fff;
@@ -1046,6 +1119,7 @@
         margin-top: 1.563vw;
         bottom: 0;
         position: static;
+
         @media (max-width: 767px) {
             margin-top: 6.563vw;
             margin-bottom: 4vw;
@@ -1060,11 +1134,13 @@
                 width: 2.042vw;
                 height: 2.042vw;
             }
+
             button {
                 background: #373737;
                 border-radius: 50%;
                 width: 100%;
                 height: 100%;
+
                 @media (max-width: 767px) {
                     padding: 0;
                 }
@@ -1116,8 +1192,7 @@
         }
     }
 
-    &__wrap {
-    }
+    &__wrap {}
 
     &__left {
         @include flexbox;
@@ -1132,13 +1207,16 @@
             margin-top: 9vw;
         }
     }
+
     &__info {
         @include flexbox;
+
         @media (max-width: 767px) {
             @include flex-direction(column);
             @include align-items(center);
         }
     }
+
     &__right {
         width: 23.698vw;
         position: absolute;
@@ -1174,15 +1252,18 @@
         @include align-items(center);
         margin-right: 2.865vw;
         width: 8.385vw;
+
         @media (max-width: 767px) {
             width: 20vw;
             margin: 0;
         }
     }
+
     &__logo-swancity {
         width: 8.333vw;
         margin-left: 8.177vw;
         margin-top: 2.344vw;
+
         @media (max-width: 767px) {
             margin-left: auto;
             margin-right: auto;
@@ -1199,6 +1280,7 @@
             font-family: $UTMGod_sWordR;
             margin-bottom: 1.198vw;
             font-size: 2.083vw;
+
             @media (max-width: 767px) {
                 font-size: 5vw;
             }
@@ -1207,6 +1289,7 @@
         .address {
             font-size: 0.942vw;
             font-family: $SVN-Gotham;
+
             @media (max-width: 767px) {
                 font-size: 3vw;
             }
@@ -1218,8 +1301,7 @@
         }
     }
 
-    &__form {
-    }
+    &__form {}
 
     &__form-group {
         margin-bottom: 0.781vw;
