@@ -82,7 +82,7 @@ var MainScript = (function () {
             autoplay: false,
             autoplaySpeed: 3000,
             slidesToShow: 2,
-            infinite:false
+            infinite: false
         });
     }
 
@@ -170,24 +170,22 @@ var MainScript = (function () {
         $('.menu__absolute a').click(function (e) {
             e.preventDefault();
 
-            $('.menu__absolute a').removeClass('active');
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active')
-            } else {
-                $(this).addClass('active')
-            }
+            let link = $(this).attr('link')
 
-            if ($(this).attr('link') != '') {
-                goToByScroll($(this).attr('link'));
-            }
+            // $('.menu__absolute a').removeClass('active');
+            $('.menu__absolute a[link="' + link + '"]').addClass('active');
 
+
+            if (link != '' && link != undefined) {
+                goToByScroll(link);
+            }
         })
+    }
 
-        function goToByScroll(echo) {
-            $('html,body').animate({
-                scrollTop: $("." + echo).offset().top - 50,
-            }, 'slow');
-        }
+    function goToByScroll(echo) {
+        $('html,body').animate({
+            scrollTop: $("#" + echo).offset().top,
+        }, 'slow');
     }
 
     this.OpenMenu = function () {
@@ -211,6 +209,9 @@ var MainScript = (function () {
             }
         })
     }
+
+
+
     /**
      * Validate form
      * @param {{name,validators}[]} form
@@ -292,6 +293,8 @@ var mainScript = new MainScript();
 $(window).on("load", function () {
     mainScript.init();
     new WOW().init();
+
+    activeItemMenu()
 });
 
 $(window).on("resize", function () {
@@ -303,6 +306,10 @@ var sections = $('section')
     , nav_height = nav.outerHeight();
 
 $(window).on('scroll', function () {
+    activeItemMenu()
+});
+
+function activeItemMenu() {
     var cur_pos = $(this).scrollTop();
 
     sections.each(function () {
@@ -317,4 +324,4 @@ $(window).on('scroll', function () {
             nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
         }
     });
-});
+}

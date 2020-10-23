@@ -19,7 +19,7 @@
         left: 40.469vw;
 
         @media (max-width: 767px) {
-            top: 44vw;
+            top: 58vw;
             left: 25vw;
             width: 49vw;
         }
@@ -32,11 +32,10 @@
         margin-bottom: 2.656vw;
 
         .logo_1 {
-            width: 1.563vw;
-            margin-bottom: 0.625vw;
+            width: 9.563vw;
 
             @media (max-width: 767px) {
-                width: 5vw;
+                width: 18vw;
                 margin-bottom: 1.2vw;
             }
         }
@@ -122,7 +121,7 @@
         display: block;
 
         @media (max-width: 767px) {
-            width: 30vw;
+            width: 20vw;
         }
     }
 }
@@ -167,7 +166,7 @@
             line-height: 2.917vw;
 
             @media (max-width: 767px) {
-                font-size: 8.125vw;
+                font-size: 5.125vw;
                 line-height: 8.917vw;
             }
         }
@@ -177,7 +176,7 @@
             font-family: $UTMGod_sWordR;
 
             @media (max-width: 767px) {
-                font-size: 4.875vw;
+                font-size: 3.875vw;
                 margin-top: 1vw;
             }
         }
@@ -441,7 +440,7 @@
             left: 50%;
             @include transform(translateX(-50%));
             bottom: 3.385vw;
-            font-size: 1.042vw;
+            font-size: 1.42vw;
             line-height: normal;
 
             @media (max-width: 767px) {
@@ -456,7 +455,7 @@
         .sub-title {
             text-transform: none;
             font-family: $SVN-Gotham-Book;
-            font-size: 0.938vw;
+            font-size: 1.138vw;
 
             @media (max-width: 767px) {
                 font-size: 2.938vw;

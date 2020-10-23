@@ -84,6 +84,7 @@ button {
     &__wrap {
         &.left {
             width: 51.376%;
+            position: relative;
 
             @media (max-width: 767px) {
                 display: none;
@@ -754,6 +755,9 @@ button {
     }
 
     &__absolute {
+        @include transition(all 0.3s ease);
+        @include flex-direction(column);
+        @include flexbox;
         position: fixed;
         right: 0;
         z-index: -1;
@@ -762,9 +766,7 @@ button {
         padding-right: 1.042vw;
         visibility: hidden;
         opacity: 0;
-        @include transition(all 0.3s ease);
-        @include flex-direction(column);
-        @include flexbox;
+
         width: 0;
         top: 0;
         height: 100%;
@@ -831,7 +833,7 @@ button {
             text-align: right;
             position: relative;
             margin: 0 0.625vw;
-            font-size: 1.354vw;
+            font-size: 1.254vw;
             color: #fff;
             text-decoration: none;
             z-index: 1;
@@ -841,35 +843,39 @@ button {
             font-family: $UTMGod_sWordR;
             margin-bottom: 1.146vw;
             margin-left: 0;
+            position: relative;
             @include transition(all 0.3s ease);
 
-            &::before {
-                position: absolute;
-                content: "";
-                height: 0.052vw;
-                width: 6.354vw;
-                background-color: transparent;
-                left: 0;
-                top: 1.042vw;
 
-                @media (max-width: 767px) {
-                    top: 3.042vw;
-                }
-            }
 
             @media (max-width: 767px) {
                 font-size: 4.5vw;
                 margin: 2vw 0;
             }
 
-            &.active,
-            &:hover {
-                position: relative;
-
+            &.active {
                 &::before {
+                    position: absolute;
+                    content: "";
+                    height: 0.052vw;
+                    width: 6.354vw;
+                    left: 0;
+                    top: 1.042vw;
                     background-color: #fff;
+
+                    @media (max-width: 767px) {
+                        top: 3.042vw;
+                    }
                 }
             }
         }
     }
+}
+
+.logo_head_modal {
+    max-width: 12vw;
+    position: absolute;
+    left: 50%;
+    top: 3vw;
+    @include transform(translateX(-50%));
 }
