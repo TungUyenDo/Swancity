@@ -138,17 +138,32 @@
         margin-bottom: 25vw;
     }
 
+    &__logo_fix {
+        width: 9vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2vw;
+
+        @media (max-width: 767px) {
+            width: 17vw;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
     &__container {
         position: absolute;
         text-align: center;
-        top: 22.563vw;
+        top: 2vw;
         left: 50%;
         @include transform(translateX(-50%));
 
         @media (max-width: 767px) {
             position: static;
             transform: none;
-            padding-top: 30vw;
+            padding-top: 6vw;
         }
     }
 
