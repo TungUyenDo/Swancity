@@ -10,7 +10,8 @@
         height: auto;
     }
 
-    &__container {}
+    &__container {
+    }
 
     &__heading {
         position: absolute;
@@ -32,10 +33,10 @@
         margin-bottom: 2.656vw;
 
         .logo_1 {
-            width: 9.563vw;
+            width: 4.563vw;
 
             @media (max-width: 767px) {
-                width: 18vw;
+                width: 12vw;
                 margin-bottom: 1.2vw;
             }
         }
@@ -265,9 +266,10 @@
 
 .block4 {
     position: relative;
-    height: 64.063vw;
+    // height: 64.063vw;
+    height: 61.979vw;
     width: 100%;
-    background: url(../assets/images/block4_bg.jpg);
+    background: url(../assets/images/block4_bg_2.jpg);
     background-size: 100% 100%;
 
     @media (max-width: 767px) {
@@ -369,7 +371,8 @@
             }
         }
 
-        .img {}
+        .img {
+        }
 
         .text {
             @include flexbox;
@@ -421,14 +424,17 @@
 
 .block5 {
     position: relative;
-    height: 56.719vw;
+    // height: 56.719vw;
     width: 100%;
-    background: url(../assets/images/block5_bg.jpg);
+    // background: url(../assets/images/block5_bg.jpg);
     background-size: 100% 100%;
-    padding-top: 7.292vw;
+    padding-top: 5.292vw;
+    padding-bottom: 4vw;
 
     @media (max-width: 767px) {
-        height: 75vw;
+        // height: 75vw;
+        // height: auto;
+        padding-top: 14vw;
     }
 
     &__container {
@@ -440,7 +446,8 @@
         }
     }
 
-    &__slider {}
+    &__slider {
+    }
 
     &__item {
         position: relative;
@@ -464,6 +471,7 @@
                 transform: none;
                 max-width: 80%;
                 margin: 0 auto;
+                margin-top: 2vw;
             }
         }
 
@@ -477,11 +485,12 @@
             }
         }
 
-        .image {}
+        .image {
+        }
     }
 
     .slick-dots {
-        bottom: 0;
+        bottom: -2.344vw;
 
         @media (max-width: 767px) {
             margin-top: 5vw;
@@ -690,7 +699,8 @@
         }
     }
 
-    &__right {}
+    &__right {
+    }
 
     &__slider {
         width: 28.646vw;
@@ -854,7 +864,7 @@
     }
 
     /* bootstrap hack: fix content width inside hidden tabs */
-    .block8__sliders>.block8__slider {
+    .block8__sliders > .block8__slider {
         display: block;
         /* undo display:none          */
         height: 0;
@@ -863,24 +873,17 @@
         /* no-overflow                */
     }
 
-    .block8__sliders>.show {
+    .block8__sliders > .show {
         height: auto;
         /* let the content decide it  */
     }
 
     /* bootstrap hack end */
-
-
-
 }
 
 .fancybox-slide--image .fancybox-content {
     animation-timing-function: ease !important;
 }
-
-// .fancybox-slide--image .fancybox-content{
-//     transform: none !important;
-// }
 
 .block9 {
     padding-top: 6vw;
@@ -1212,7 +1215,8 @@
         }
     }
 
-    &__wrap {}
+    &__wrap {
+    }
 
     &__left {
         @include flexbox;
@@ -1321,7 +1325,8 @@
         }
     }
 
-    &__form {}
+    &__form {
+    }
 
     &__form-group {
         margin-bottom: 0.781vw;
@@ -1350,5 +1355,154 @@
         @media (max-width: 767px) {
             margin-top: 3vw;
         }
+    }
+}
+
+.block12 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 57.396vw;
+    width: 100%;
+    background: url(../assets/images/block12_bg.jpg);
+    background-size: 100% 100%;
+    @media(max-width:767px){
+        height: auto;
+    }
+    &__container {
+        margin-left: 5.052vw;
+        overflow: hidden;
+        padding-top: 19.531vw;
+        @media(max-width:767px){
+            width: calc(100% - 16%);
+            margin: 0 auto;
+            padding-top: 30.531vw;
+        }
+    }
+    &__heading {
+        color: #fff;
+        font-family: $UTMGod_sWordR;
+        @include flexbox;
+        position: absolute;
+        top: 0;
+       
+        .number {
+            font-size: 20.833vw;
+            line-height: 18.750vw;
+            @media(max-width:767px){
+                font-size: 30.833vw;
+                line-height: 25.75vw;
+            }
+        }
+        .txt {
+            @include flexbox;
+            @include flex-direction(column);
+            @include justify-content(flex-end);
+            line-height: normal;
+            margin-bottom: 2.344vw;
+            
+            i {
+                font-style: normal;
+                text-transform: uppercase;
+            }
+        }
+        .txt-1 {
+            font-size: 2.344vw;
+            @media(max-width:767px){
+                font-size: 4.344vw;
+            }
+        }
+        .txt-2 {
+            font-size: 3.646vw;
+            line-height: 2.604vw;
+            @media(max-width:767px){
+                font-size: 7.646vw;
+                line-height: 4.604vw;
+            }
+        }
+    }
+    &__wrap {
+        @include flexbox;
+        @media(max-width:767px){
+            @include flex-direction(column)
+        }
+    }
+    &__item {
+        overflow: hidden;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+
+    &__slider-for {
+        &--wrap {
+            width: 30.99vw;
+            margin-right: 0.833vw;
+            @media(max-width:767px){
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+    &__slider-nav {
+        &--wrap {
+            width: 63.542vw;
+            @media(max-width:767px){
+                width: 100%;
+                margin-top: 2vw;
+            }
+        }
+        .slick-track {
+            // left: 0 !important;
+        }
+        .slick-slide {
+            margin: 0 0.4165vw;
+            cursor: pointer;
+            opacity: 0.4;
+            max-width: 92%;
+            transition: all 0.2s ease;
+            &.slick-current {
+                opacity: 1;
+            }
+        }
+
+        /* the parent */
+        .slick-list {
+            margin: 0 -0.4165vw;
+            padding-left: 0 !important;
+            padding-right: 7.031vw !important;
+            @media(max-width:767px){
+                padding-left: 5vw !important;
+                padding-right: 5vw !important;
+            }
+        }
+    }
+    .slick-arrow {
+        position: absolute;
+        bottom: -2.604vw;
+        transform: none;
+        top: auto;
+        background: #fff;
+        border-radius: 50%;
+        width: 2.083vw;
+        height: 2.083vw;
+        cursor: pointer;
+        &::before {
+            font-family: $SVN-Gotham;
+            color: #000;
+            line-height: 0.365vw;
+            opacity: 1;
+            font-size: 1.042vw;
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    .slick-next {
+        left: 2.604vw;
+    }
+    .slick-prev {
+        left: 0;
     }
 }

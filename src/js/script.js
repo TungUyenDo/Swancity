@@ -17,6 +17,10 @@ var MainScript = (function () {
         self.Block11ValidateForm();
         self.Block5Slider();
         self.Block10Slider();
+        self.Block12Slider();
+        setTimeout(function () {
+            self.Block12Slider();
+        }, 100)
         self.Block8Slider();
         self.Block8Tabs();
         self.Menu();
@@ -44,6 +48,44 @@ var MainScript = (function () {
             $('.block8__left .tab-pane[id="mb_' + id + '"]').addClass('show active')
 
         })
+    }
+
+    this.Block12Slider = function () {
+        if ($(".block12__slider-for").length === 0) {
+            return false
+        }
+        if ($(".block12__slider-nav").length === 0) {
+            return false
+        }
+
+        $('.block12__slider-for').not('.slick-initialized').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            autoplay: false,
+            asNavFor: '.block12__slider-nav'
+        });
+        $('.block12__slider-nav').not('.slick-initialized').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.block12__slider-for',
+            dots: false,
+            arrows: true,
+            infinite: true,
+            centerMode: false,
+            focusOnSelect: true,
+            autoplay: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                        centerMode: true,
+                    }
+                },
+            ]
+        });
     }
 
     this.Block10Slider = function () {
